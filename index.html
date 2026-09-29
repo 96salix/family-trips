@@ -40,6 +40,16 @@
 </head>
 <body class="bg-slate-100 text-slate-800 antialiased min-h-screen pb-20">
 
+  
+    <!-- ホーム画面追加・オフライン案内バナー -->
+    <div id="pwa-banner" class="bg-gradient-to-r from-sky-600 to-indigo-600 text-white px-3 py-2 text-[11px] flex items-center justify-between shadow-xs">
+      <div class="flex items-center gap-1.5 truncate">
+        <span>📲</span>
+        <span class="truncate"><strong>スマホのホーム画面に追加</strong>するとアプリ感覚ですぐ開けます！</span>
+      </div>
+      <button onclick="toggleModal('install-modal')" class="shrink-0 bg-white/20 hover:bg-white/30 px-2 py-0.5 rounded font-bold underline ml-2">やり方</button>
+    </div>
+
   <!-- ヘッダー -->
   <header class="bg-gradient-to-r from-sky-500 via-teal-500 to-emerald-500 text-white shadow-lg sticky top-0 z-30">
     <div class="max-w-3xl mx-auto px-4 py-4 sm:py-6 flex items-center justify-between">
@@ -176,6 +186,14 @@
       <button onclick="switchTab('packing')" id="tab-packing" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900">
         🎒 持ち物
         <div class="text-[10px] font-normal opacity-90">チェック表</div>
+      </button>
+      <button onclick="switchTab('mission')" id="tab-mission" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900">
+        📸 ミッション
+        <div class="text-[10px] font-normal opacity-90">写真＆記念</div>
+      </button>
+      <button onclick="switchTab('budget')" id="tab-budget" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900">
+        💰 お会計
+        <div class="text-[10px] font-normal opacity-90">旅費メモ</div>
       </button>
     </div>
 
@@ -438,6 +456,10 @@
           <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
             🚶 徒歩10分 または 🚕 タクシー約3分(約700円)でホテル玄関へ
           </span>
+          <a href="https://go.mo-t.com/" target="_blank" class="inline-flex items-center gap-1 bg-black text-white text-[11px] font-black px-2.5 py-1 rounded-full shadow-2xs hover:bg-slate-800 transition-colors">
+            🚕 GOタクシー呼ぶ
+          </a>
+          </span>
         </div>
       </div>
 
@@ -571,6 +593,10 @@
           <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
             お部屋で身支度 ➔ 09:15発 🚕 タクシー直行（約12分／都市高速経由 約2,000円）
           </span>
+          <a href="https://go.mo-t.com/" target="_blank" class="inline-flex items-center gap-1 bg-black text-white text-[11px] font-black px-2.5 py-1 rounded-full shadow-2xs hover:bg-slate-800 transition-colors">
+            🚕 GOタクシー呼ぶ
+          </a>
+          </span>
         </div>
       </div>
 
@@ -656,7 +682,7 @@
             <h3 class="font-black text-slate-800 text-sm sm:text-base">寄り道候補：勅祭社 香椎宮（かしいぐう）</h3>
             <p class="text-xs text-slate-600 mt-1">
               <strong>「水族館が早めに終わったら寄る」バックアップ！</strong><br>
-              香椎駅で下車し、駅前からタクシー5分（約800円）で本殿前へ。樹齢1800年の御神木「綾杉」や神秘的な空気を堪能（滞在約35分）。<br>
+              香椎駅で下車し、駅前からタクシー5分（約800円）で本殿前へ。<a href="https://go.mo-t.com/" target="_blank" class="inline-flex items-center gap-1 bg-black text-white text-[10px] font-bold px-2 py-0.5 rounded-full ml-1 shadow-2xs">🚕 GOタクシー</a>樹齢1800年の御神木「綾杉」や神秘的な空気を堪能（滞在約35分）。<br>
               ➔ 15:50にタクシーで香椎駅に戻りJR快速で博多へ。<strong>16:35にはホテル帰着できるので18:00の誕生日ディナーにも余裕！</strong>
             </p>
             <div class="mt-2.5 flex gap-2">
@@ -971,6 +997,10 @@
           <span class="inline-flex items-center gap-1 bg-emerald-100 text-emerald-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-emerald-200">
             🚇 地下鉄で天神・春吉へ戻り荷物受取（14:35） ➔ 14:50発 🚕 空港直行（わずか15分！）
           </span>
+          <a href="https://go.mo-t.com/" target="_blank" class="inline-flex items-center gap-1 bg-black text-white text-[11px] font-black px-2.5 py-1 rounded-full shadow-2xs hover:bg-slate-800 transition-colors">
+            🚕 GOタクシー呼ぶ
+          </a>
+          </span>
         </div>
       </div>
 
@@ -1053,6 +1083,23 @@
 
     </div>
 
+    
+      <!-- 雨天・体力切れの代替案（アコーディオン） -->
+      <div class="bg-slate-200/60 rounded-2xl p-3 border border-slate-300">
+        <details class="cursor-pointer group">
+          <summary class="font-black text-xs text-slate-700 flex items-center justify-between select-none">
+            <span class="flex items-center gap-1.5">☔ 【もしもの時】雨天・移動短縮プラン</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="mt-2.5 pt-2.5 border-t border-slate-300 text-xs text-slate-600 space-y-1.5">
+            <div><strong>・アンパンマンミュージアム：</strong> 完全屋内施設なので雨でも快適！</div>
+            <div><strong>・午後に雨が強まった場合：</strong> 筥崎宮（屋外参道）への移動を取りやめ、アンパンマン直結の「川端通商店街（完全アーケード）」で博多うどんランチ＆「櫛田神社（飾り山笠）」散策に切り替えれば一切傘をささずに楽しめます。</div>
+          </div>
+        </details>
+      </div>
+
+    </div>
+
     <!-- ==================== 持ち物・子連れレスキューメモ ==================== -->
     <div id="content-packing" class="space-y-4 hidden">
       
@@ -1113,6 +1160,53 @@
 
     </div>
 
+  
+    <!-- ==================== 写真＆記念ミッション ==================== -->
+    <div id="content-mission" class="space-y-3 hidden">
+      <div class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl p-4 sm:p-5 shadow-sm border border-rose-200">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="font-black text-rose-900 text-sm flex items-center gap-2">
+            <span>📸</span> 家族の福岡思い出ミッション（全10個）
+          </h3>
+          <span id="mission-progress" class="text-xs bg-rose-200 text-rose-800 font-black px-2 py-0.5 rounded-full">0 / 10 完了</span>
+        </div>
+        <p class="text-xs text-slate-600 mb-3">チェックを入れると自動で保存されます！家族みんなでクリアしよう✨</p>
+        <div class="space-y-2 text-xs text-slate-700" id="mission-list">
+          <!-- JSでレンダリング -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 旅費・割り勘メモ ==================== -->
+    <div id="content-budget" class="space-y-3 hidden">
+      <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
+        <h3 class="font-black text-slate-800 text-sm mb-1 flex items-center gap-2">
+          <span>💰</span> 旅の支出・お小遣いメモ
+        </h3>
+        <p class="text-xs text-slate-500 mb-3">屋台やお土産など、その場でサッとメモできます（スマホ内に保存）</p>
+
+        <!-- 入力フォーム -->
+        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 mb-3">
+          <div class="grid grid-cols-3 gap-2 mb-2">
+            <input type="text" id="expense-name" placeholder="品名（例: 梅ヶ枝餅）" class="col-span-2 px-2.5 py-1.5 text-xs bg-white rounded-lg border border-slate-300">
+            <input type="number" id="expense-amount" placeholder="金額 (円)" class="px-2.5 py-1.5 text-xs bg-white rounded-lg border border-slate-300">
+          </div>
+          <button onclick="addExpense()" class="w-full py-1.5 bg-sky-600 text-white rounded-lg font-bold text-xs hover:bg-sky-700 transition-colors">
+            ＋ 支出を追加する
+          </button>
+        </div>
+
+        <!-- 支出リスト -->
+        <div class="flex items-center justify-between pb-2 border-b border-slate-200 text-xs font-bold text-slate-700">
+          <span>メモした支出合計</span>
+          <span id="expense-total" class="text-base text-rose-600 font-black font-mono">0 円</span>
+        </div>
+        <div id="expense-list" class="divide-y divide-slate-100 text-xs text-slate-600 max-h-60 overflow-y-auto mt-2">
+          <!-- JSでレンダリング -->
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <script>
@@ -1134,5 +1228,161 @@
 
     
   </script>
+
+  <!-- インストール方法モーダル -->
+  <div id="install-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-5 shadow-2xl">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-black text-slate-800 text-sm">📲 ホーム画面に追加する方法</h3>
+        <button onclick="toggleModal('install-modal')" class="text-slate-400 hover:text-slate-600 text-lg font-bold">×</button>
+      </div>
+      <div class="space-y-3 text-xs text-slate-600 leading-relaxed">
+        <div class="bg-sky-50 p-2.5 rounded-xl border border-sky-100">
+          <strong class="text-sky-900 block mb-1">【iPhone (Safari) の場合】</strong>
+          1. 画面下の共有ボタン（四角から矢印が上に出ているアイコン）をタップ<br>
+          2. 下にスクロールして<strong>「ホーム画面に追加」</strong>をタップ！
+        </div>
+        <div class="bg-emerald-50 p-2.5 rounded-xl border border-emerald-100">
+          <strong class="text-emerald-900 block mb-1">【Android (Chrome) の場合】</strong>
+          1. 画面右上の「︙（メニュー）」をタップ<br>
+          2. <strong>「ホーム画面に追加」</strong>または「アプリをインストール」をタップ！
+        </div>
+        <p class="text-[11px] text-slate-400">※ホーム画面に追加すると、電波が悪い場所でもアイコンから一発で開けるようになります。</p>
+      </div>
+      <button onclick="toggleModal('install-modal')" class="mt-4 w-full py-2 bg-slate-800 text-white rounded-xl font-bold text-xs">とじる</button>
+    </div>
+  </div>
+
+  <script>
+    // タブ切り替え
+    function switchTab(tabId) {
+      ['day1', 'day2', 'day3', 'packing', 'mission', 'budget'].forEach(id => {
+        const btn = document.getElementById('tab-' + id);
+        const content = document.getElementById('content-' + id);
+        if (!btn || !content) return;
+        if (id === tabId) {
+          btn.className = 'flex-1 py-2 rounded-xl font-bold text-xs transition-all tab-active';
+          content.classList.remove('hidden');
+        } else {
+          btn.className = 'flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900';
+          content.classList.add('hidden');
+        }
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) modal.classList.toggle('hidden');
+    }
+
+    // ミッション機能
+    const defaultMissions = [
+      "1. 羽田空港で飛行機をバックに家族4人ショット！",
+      "2. 太宰府天満宮の「御神牛」の頭をなでて賢くなる祈願！",
+      "3. 焼きたての熱々梅ヶ枝餅をほおばる笑顔！",
+      "4. ももち〜海の中道の高速船デッキで海風クルーズ写真！",
+      "5. マリンワールドでイルカジャンプの瞬間を激写！",
+      "6. パパ34歳バースデー！水炊き善哉で家族みんなで乾杯！",
+      "7. 夜の提灯が輝く博多屋台で暖簾をくぐる記念写真！",
+      "8. アンパンマンミュージアムで大好きなキャラクターと遭遇！",
+      "9. 筥崎宮の海へと続く真っ直ぐな参道を歩くショット！",
+      "10. ナガタパンの昭和レトロな店先で美味しそうにパンを食べる！"
+    ];
+
+    function renderMissions() {
+      const listEl = document.getElementById('mission-list');
+      if (!listEl) return;
+      const saved = JSON.parse(localStorage.getItem('fukuoka_missions') || '{}');
+      let doneCount = 0;
+
+      listEl.innerHTML = defaultMissions.map((text, idx) => {
+        const checked = !!saved[idx];
+        if (checked) doneCount++;
+        return `
+          <label class="flex items-start gap-2.5 p-2 rounded-lg hover:bg-white/80 transition-colors cursor-pointer ${checked ? 'opacity-60 line-through' : ''}">
+            <input type="checkbox" onchange="toggleMission(${idx})" ${checked ? 'checked' : ''} class="mt-0.5 rounded text-rose-600 shrink-0">
+            <span>${text}</span>
+          </label>
+        `;
+      }).join('');
+
+      document.getElementById('mission-progress').textContent = `${doneCount} / ${defaultMissions.length} 完了`;
+    }
+
+    function toggleMission(idx) {
+      const saved = JSON.parse(localStorage.getItem('fukuoka_missions') || '{}');
+      saved[idx] = !saved[idx];
+      localStorage.setItem('fukuoka_missions', JSON.stringify(saved));
+      renderMissions();
+    }
+
+    // 旅費メモ機能
+    function renderExpenses() {
+      const listEl = document.getElementById('expense-list');
+      if (!listEl) return;
+      const expenses = JSON.parse(localStorage.getItem('fukuoka_expenses') || '[]');
+      let total = 0;
+
+      if (expenses.length === 0) {
+        listEl.innerHTML = '<div class="py-4 text-center text-slate-400 text-xs">まだ記録はありません</div>';
+      } else {
+        listEl.innerHTML = expenses.map((item, idx) => {
+          total += Number(item.amount);
+          return `
+            <div class="flex items-center justify-between py-2">
+              <div>
+                <div class="font-bold text-slate-700">${item.name}</div>
+                <div class="text-[10px] text-slate-400">${item.date}</div>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800 font-mono">¥${Number(item.amount).toLocaleString()}</span>
+                <button onclick="deleteExpense(${idx})" class="text-rose-400 hover:text-rose-600 text-xs px-1">×</button>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      document.getElementById('expense-total').textContent = `¥${total.toLocaleString()}`;
+    }
+
+    function addExpense() {
+      const nameInput = document.getElementById('expense-name');
+      const amountInput = document.getElementById('expense-amount');
+      const name = nameInput.value.trim();
+      const amount = parseInt(amountInput.value);
+
+      if (!name || isNaN(amount) || amount <= 0) {
+        alert('品名と正しい金額を入力してください');
+        return;
+      }
+
+      const expenses = JSON.parse(localStorage.getItem('fukuoka_expenses') || '[]');
+      const now = new Date();
+      const dateStr = `${now.getMonth()+1}/${now.getDate()} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+
+      expenses.unshift({ name, amount, date: dateStr });
+      localStorage.setItem('fukuoka_expenses', JSON.stringify(expenses));
+
+      nameInput.value = '';
+      amountInput.value = '';
+      renderExpenses();
+    }
+
+    function deleteExpense(idx) {
+      const expenses = JSON.parse(localStorage.getItem('fukuoka_expenses') || '[]');
+      expenses.splice(idx, 1);
+      localStorage.setItem('fukuoka_expenses', JSON.stringify(expenses));
+      renderExpenses();
+    }
+
+    // 初期化
+    document.addEventListener('DOMContentLoaded', () => {
+      renderMissions();
+      renderExpenses();
+    });
+  </script>
+
 </body>
 </html>
