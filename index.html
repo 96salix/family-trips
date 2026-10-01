@@ -187,10 +187,6 @@
         🎒 持ち物
         <div class="text-[10px] font-normal opacity-90">チェック表</div>
       </button>
-      <button onclick="switchTab('mission')" id="tab-mission" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900">
-        📸 ミッション
-        <div class="text-[10px] font-normal opacity-90">写真＆記念</div>
-      </button>
       <button onclick="switchTab('budget')" id="tab-budget" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900">
         💰 お会計
         <div class="text-[10px] font-normal opacity-90">旅費メモ</div>
@@ -218,13 +214,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-home-start')" id="chk-m-home-start" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">出発直前！リュックを背負った子どもたちの「いってきます！」元気ショット！</div>
               </div>
             </div>
@@ -258,13 +248,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-haneda')" id="chk-m-haneda" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">大きなANAの飛行機を大きなガラス越しにバックにした家族4人ショット！</div>
               </div>
             </div>
@@ -302,13 +286,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-fuk-arrive')" id="chk-m-fuk-arrive" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">「福岡空港へようこそ」の看板前やターンテーブル横で「福岡ついたぞー！」ポーズ！</div>
               </div>
             </div>
@@ -349,13 +327,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-hirao')" id="chk-m-hirao" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">揚げたてサクサク天ぷらをハフハフ頬張る瞬間＆山盛りご飯の幸せ顔！</div>
               </div>
             </div>
@@ -399,13 +371,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-dazaifu')" id="chk-m-dazaifu" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">①御神牛の頭をなでる子どもたち ＆ ②焼きたて梅ヶ枝餅をパクリ！ ＆ ③レトロ観覧車・乗り物ではしゃぐ笑顔！</div>
               </div>
             </div>
@@ -449,13 +415,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-hotel-checkin')" id="chk-m-hotel-checkin" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">広々コンフォートツインのお部屋でベッドにダイブする子どもたちの解放感ショット！</div>
               </div>
             </div>
@@ -497,13 +457,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-sumiyoshi')" id="chk-m-sumiyoshi" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">夕暮れの厳かな鳥居前＆境内の「古代力士像」と同じ力こぶポーズ！</div>
               </div>
             </div>
@@ -544,13 +498,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-torikawa')" id="chk-m-torikawa" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">山盛りの「名物ぐるぐる鶏皮串」を両手に持って笑顔で乾杯！</div>
               </div>
             </div>
@@ -625,13 +573,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-yatai-day1')" id="chk-m-yatai-day1" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">赤提灯が灯る屋台の暖簾（のれん）をくぐってカウンターに座る旅情満点ショット！</div>
               </div>
             </div>
@@ -719,13 +661,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-hotel-breakfast')" id="chk-m-hotel-breakfast" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">明太子や九州グルメがずらり並んだプレートを前に「朝から豪華〜！」の笑顔！</div>
               </div>
             </div>
@@ -765,13 +701,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-gold-seal')" id="chk-m-gold-seal" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">黄金に輝く本物の「国宝 金印」をじーっと覗き込む真剣な横顔！</div>
               </div>
             </div>
@@ -801,13 +731,7 @@
           <div class="mt-2 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
             <span class="text-base shrink-0">📸</span>
             <div class="flex-1 min-w-0">
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                <label class="inline-flex items-center gap-1 cursor-pointer">
-                  <input type="checkbox" onchange="toggleEventMission('m-boat')" id="chk-m-boat" class="rounded text-rose-600 shrink-0">
-                  <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                </label>
-              </div>
+              <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
               <div class="font-bold text-rose-950 mt-0.5 leading-snug">高速船デッキで博多湾の海風を浴びながら福岡タワーをバックに爽快ショット！</div>
             </div>
           </div>
@@ -831,13 +755,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-marine-world')" id="chk-m-marine-world" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">①イルカジャンプ大迫力の瞬間！ ＆ ②レストラン巨大水槽越しにイルカとツーショット！</div>
               </div>
             </div>
@@ -881,13 +799,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-kashii')" id="chk-m-kashii" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">（立ち寄った場合）樹齢1800年の巨大な御神木「綾杉」の前で神秘的な記念写真！</div>
               </div>
             </div>
@@ -958,13 +870,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-birthday')" id="chk-m-birthday" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">★最重要★ パパ34歳お誕生日おめでとう！半個室で水炊き鍋を囲んで家族4人主役ショット！🎂✨</div>
               </div>
             </div>
@@ -1035,13 +941,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-yatai-adult')" id="chk-m-yatai-adult" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">【パパ・ママそれぞれ】一人屋台カウンターでビールやラーメンと一緒に自撮りまたは店員さんにパシャリ！🍺</div>
               </div>
             </div>
@@ -1130,13 +1030,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-breakfast-day3')" id="chk-m-breakfast-day3" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">洗練された外ホテルの優雅なダイニングで、朝から幸せいっぱいのモーニング写真！</div>
               </div>
             </div>
@@ -1197,13 +1091,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-anpanman')" id="chk-m-anpanman" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">①アンパンマンやばいきんまんとハイタッチ！ ＆ ②ジャムおじさんの可愛いキャラクターパンを持って決めポーズ！</div>
               </div>
             </div>
@@ -1247,13 +1135,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-hakozaki')" id="chk-m-hakozaki" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">①ナガタパンの昭和レトロな古民家看板前でパンパクリ！ ＆ ②海へ続く雄大な参道で手を繋いで歩く後ろ姿！</div>
               </div>
             </div>
@@ -1305,13 +1187,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-fuk-deck')" id="chk-m-fuk-deck" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">展望デッキのフェンス越しに、目の前で轟音とともに飛び立つ飛行機を見つめる子どもたちの後ろ姿！</div>
               </div>
             </div>
@@ -1382,13 +1258,7 @@
             <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
               <span class="text-base shrink-0">📸</span>
               <div class="flex-1 min-w-0">
-                <div class="flex items-center justify-between gap-1">
-                  <span class="text-[10px] font-black text-rose-600 uppercase tracking-wider">PHOTO MISSION</span>
-                  <label class="inline-flex items-center gap-1 cursor-pointer">
-                    <input type="checkbox" onchange="toggleEventMission('m-goal')" id="chk-m-goal" class="rounded text-rose-600 shrink-0">
-                    <span class="text-[10px] font-bold text-slate-500">クリア！</span>
-                  </label>
-                </div>
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
                 <div class="font-bold text-rose-950 mt-0.5 leading-snug">自宅玄関前で「ただいま〜！」たくさんの思い出とお土産を抱えて旅の締めくくりゴールショット！🎉</div>
               </div>
             </div>
@@ -1477,22 +1347,6 @@
     </div>
 
   
-    <!-- ==================== 写真＆記念ミッション ==================== -->
-    <div id="content-mission" class="space-y-3 hidden">
-      <div class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl p-4 sm:p-5 shadow-sm border border-rose-200">
-        <div class="flex items-center justify-between mb-2">
-          <h3 class="font-black text-rose-900 text-sm flex items-center gap-2">
-            <span>📸</span> 家族の福岡思い出ミッション（全10個）
-          </h3>
-          <span id="mission-progress" class="text-xs bg-rose-200 text-rose-800 font-black px-2 py-0.5 rounded-full">0 / 10 完了</span>
-        </div>
-        <p class="text-xs text-slate-600 mb-3">チェックを入れると自動で保存されます！家族みんなでクリアしよう✨</p>
-        <div class="space-y-2 text-xs text-slate-700" id="mission-list">
-          <!-- JSでレンダリング -->
-        </div>
-      </div>
-    </div>
-
     <!-- ==================== 旅費・割り勘メモ ==================== -->
     <div id="content-budget" class="space-y-3 hidden">
       <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
@@ -1572,7 +1426,7 @@
   <script>
     // タブ切り替え
     function switchTab(tabId) {
-      ['day1', 'day2', 'day3', 'packing', 'mission', 'budget'].forEach(id => {
+      ['day1', 'day2', 'day3', 'packing', 'budget'].forEach(id => {
         const btn = document.getElementById('tab-' + id);
         const content = document.getElementById('content-' + id);
         if (!btn || !content) return;
@@ -1592,46 +1446,7 @@
       if (modal) modal.classList.toggle('hidden');
     }
 
-    // ミッション機能
-    const defaultMissions = [
-      "1. 羽田空港で飛行機をバックに家族4人ショット！",
-      "2. 太宰府天満宮の「御神牛」の頭をなでて賢くなる祈願！",
-      "3. 焼きたての熱々梅ヶ枝餅をほおばる笑顔！",
-      "4. ももち〜海の中道の高速船デッキで海風クルーズ写真！",
-      "5. マリンワールドでイルカジャンプの瞬間を激写！",
-      "6. パパ34歳バースデー！水炊き善哉で家族みんなで乾杯！",
-      "7. 夜の提灯が輝く博多屋台で暖簾をくぐる記念写真！",
-      "8. アンパンマンミュージアムで大好きなキャラクターと遭遇！",
-      "9. 筥崎宮の海へと続く真っ直ぐな参道を歩くショット！",
-      "10. ナガタパンの昭和レトロな店先で美味しそうにパンを食べる！"
-    ];
-
-    function renderMissions() {
-      const listEl = document.getElementById('mission-list');
-      if (!listEl) return;
-      const saved = JSON.parse(localStorage.getItem('fukuoka_missions') || '{}');
-      let doneCount = 0;
-
-      listEl.innerHTML = defaultMissions.map((text, idx) => {
-        const checked = !!saved[idx];
-        if (checked) doneCount++;
-        return `
-          <label class="flex items-start gap-2.5 p-2 rounded-lg hover:bg-white/80 transition-colors cursor-pointer ${checked ? 'opacity-60 line-through' : ''}">
-            <input type="checkbox" onchange="toggleMission(${idx})" ${checked ? 'checked' : ''} class="mt-0.5 rounded text-rose-600 shrink-0">
-            <span>${text}</span>
-          </label>
-        `;
-      }).join('');
-
-      document.getElementById('mission-progress').textContent = `${doneCount} / ${defaultMissions.length} 完了`;
-    }
-
-    function toggleMission(idx) {
-      const saved = JSON.parse(localStorage.getItem('fukuoka_missions') || '{}');
-      saved[idx] = !saved[idx];
-      localStorage.setItem('fukuoka_missions', JSON.stringify(saved));
-      renderMissions();
-    }
+    
 
     // 旅費メモ機能
     function renderExpenses() {
@@ -1695,7 +1510,6 @@
 
     // 初期化
     document.addEventListener('DOMContentLoaded', () => {
-      renderMissions();
       renderExpenses();
     });
   </script>
