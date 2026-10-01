@@ -63,6 +63,20 @@
   <!-- メインコンテンツ -->
   <main class="max-w-3xl mx-auto px-3 sm:px-4 mt-3">
 
+    <!-- 送迎バス緊急・時刻表バナー -->
+    <div class="mb-3">
+      <button onclick="toggleModal('bus-modal')" class="w-full bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white p-3 rounded-2xl shadow-md border border-blue-500/30 flex items-center justify-between text-left transition-all active:scale-[0.99]">
+        <div class="flex items-center gap-2.5">
+          <span class="text-2xl p-1 bg-white/20 rounded-xl">🚌</span>
+          <div>
+            <div class="text-[11px] text-sky-100 font-bold">送迎バスに遅れた時も安心！</div>
+            <div class="text-xs sm:text-sm font-black tracking-tight">ホテル・ゆめ牧場 送迎バス時刻表まとめ ➔</div>
+          </div>
+        </div>
+        <span class="bg-white/20 px-2.5 py-1 rounded-lg text-[11px] font-black shrink-0">タップで展開</span>
+      </button>
+    </div>
+
     <!-- クイック天気・連絡カード -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
       <a href="https://tenki.jp/forecast/3/11/4510/12211/" target="_blank" class="bg-white p-2.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-2 hover:bg-slate-50 transition-colors">
@@ -221,16 +235,93 @@
       <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 relative overflow-hidden">
         <div class="flex items-start gap-3">
           <div class="bg-blue-100 text-blue-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
-            18:00<br><span class="text-[10px] font-normal">送迎バス</span>
+            18:10<br><span class="text-[10px] font-normal">送迎バス</span>
           </div>
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2">
-              <span class="text-sm font-black text-slate-800">無料送迎バスでホテルへ移動</span>
+              <span class="text-sm font-black text-slate-800">無料送迎バスでホテルへ直行</span>
               <span class="text-[10px] bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded font-bold">所要約10分</span>
             </div>
             <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-              第2ターミナル1階の<strong>「27番乗り場」</strong>からマロウド成田の無料送迎バスに乗車。ホテル玄関まで直行します。
+              第2ターミナル1階の<strong>「27番乗り場」</strong>からマロウド成田の専用無料シャトルバスに乗車（予定便：18:10発）。ホテル玄関まで直行します。
             </p>
+
+            <!-- 展開式：送迎バス時刻表（遅れた時用） -->
+            <details class="mt-3 bg-slate-50 border border-blue-200 rounded-xl overflow-hidden group">
+              <summary class="px-3 py-2.5 bg-blue-50/90 hover:bg-blue-100 font-bold text-xs text-blue-900 cursor-pointer flex items-center justify-between select-none transition-colors">
+                <span class="flex items-center gap-1.5">
+                  <span>🚌</span>
+                  <span>送迎バス時刻表を展開（乗り遅れた場合の次便確認）</span>
+                </span>
+                <span class="text-[11px] bg-blue-200/70 text-blue-800 px-2 py-0.5 rounded font-bold group-open:hidden">▼ 開く</span>
+                <span class="text-[11px] bg-blue-200/70 text-blue-800 px-2 py-0.5 rounded font-bold hidden group-open:inline">▲ 閉じる</span>
+              </summary>
+              <div class="p-3 text-xs text-slate-700 space-y-2.5 bg-white border-t border-blue-100">
+                <!-- 乗り場案内 -->
+                <div class="bg-sky-50 p-2.5 rounded-xl border border-sky-100 flex items-start gap-2">
+                  <span class="text-lg">📍</span>
+                  <div class="text-[11px] leading-relaxed">
+                    <strong class="text-sky-900">乗車場所：第2ターミナル 1階「27番」バス乗り場</strong><br>
+                    <span class="text-slate-600">※周辺ホテルとの共同使用バス停です。フロントに「マロウドインターナショナルホテル」と書かれたバスにご乗車ください。（第1ターミナル発の場合は 1階「16番」）</span>
+                  </div>
+                </div>
+
+                <!-- 夕方〜夜の時刻表 -->
+                <div class="overflow-x-auto rounded-lg border border-slate-200">
+                  <table class="w-full text-center border-collapse text-[11px]">
+                    <thead>
+                      <tr class="bg-slate-100 text-slate-700 font-bold">
+                        <th class="p-1.5 border-b border-r border-slate-200 w-16">時間帯</th>
+                        <th class="p-1.5 border-b border-r border-slate-200 bg-blue-50 text-blue-900 font-black">第2ターミナル発（27番）</th>
+                        <th class="p-1.5 border-b border-slate-200 text-slate-500">第1ターミナル発（16番）</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                      <tr>
+                        <td class="p-1.5 font-bold bg-slate-50 border-r border-slate-200">16時</td>
+                        <td class="p-1.5 border-r border-slate-200 font-semibold text-slate-700">00分 / 20分</td>
+                        <td class="p-1.5 text-slate-500">10分 / 30分</td>
+                      </tr>
+                      <tr>
+                        <td class="p-1.5 font-bold bg-slate-50 border-r border-slate-200">17時</td>
+                        <td class="p-1.5 border-r border-slate-200 font-semibold text-slate-700">00分 / 30分</td>
+                        <td class="p-1.5 text-slate-500">10分 / 40分</td>
+                      </tr>
+                      <tr class="bg-amber-50">
+                        <td class="p-1.5 font-black text-amber-900 bg-amber-100/70 border-r border-slate-200">18時 (予定)</td>
+                        <td class="p-1.5 border-r border-slate-200 font-black text-amber-950">
+                          <span class="bg-amber-200 text-amber-900 px-1 rounded">18:10</span> / 
+                          <span class="bg-blue-100 text-blue-900 px-1 rounded">18:40</span>
+                        </td>
+                        <td class="p-1.5 text-slate-500">20分 / 50分</td>
+                      </tr>
+                      <tr>
+                        <td class="p-1.5 font-bold bg-slate-50 border-r border-slate-200">19時</td>
+                        <td class="p-1.5 border-r border-slate-200 font-semibold text-slate-700">10分 / 30分</td>
+                        <td class="p-1.5 text-slate-500">20分 / 40分</td>
+                      </tr>
+                      <tr>
+                        <td class="p-1.5 font-bold bg-slate-50 border-r border-slate-200">20時</td>
+                        <td class="p-1.5 border-r border-slate-200 font-semibold text-slate-700">00分 / 20分 / 40分</td>
+                        <td class="p-1.5 text-slate-500">10分 / 30分 / 50分</td>
+                      </tr>
+                      <tr>
+                        <td class="p-1.5 font-bold bg-slate-50 border-r border-slate-200">21時</td>
+                        <td class="p-1.5 border-r border-slate-200 font-semibold text-slate-700">00分 / 20分 / 40分</td>
+                        <td class="p-1.5 text-slate-500">10分 / 30分 / 50分</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- リカバリーアドバイス -->
+                <div class="bg-amber-50/90 p-2.5 rounded-xl border border-amber-200 text-[11px] text-amber-950 leading-relaxed">
+                  💡 <strong>もし18:10に乗り遅れた場合：</strong><br>
+                  ・30分後の <strong>18:40発</strong> に乗れば、ホテル到着は18:50頃。19:30〜のディナーバイキングに余裕で間に合います！<br>
+                  ・第2ターミナル1階の到着ロビーはベンチやコンビニ・自販機・トイレが揃っているので、子どもたちとゆっくり待てます。
+                </div>
+              </div>
+            </details>
           </div>
         </div>
       </div>
@@ -327,17 +418,38 @@
       <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
         <div class="flex items-start gap-3">
           <div class="bg-blue-100 text-blue-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
-            09:00<br>〜09:30
+            08:50<br>〜09:30
           </div>
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2">
-              <span class="text-sm font-black text-slate-800">チェックアウト ➔ JR成田駅へ</span>
-              <span class="text-[10px] bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded font-bold">無料送迎</span>
+              <span class="text-sm font-black text-slate-800">チェックアウト ➔ 空港 / 成田駅へ</span>
+              <span class="text-[10px] bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded font-bold">送迎バス</span>
             </div>
             <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-              ホテル発の無料送迎バスでJR成田駅（東口）へ移動。<br>
-              <strong>成田駅改札外のコインロッカーに大きなボストンバッグを預けて身軽になります！</strong>
+              ホテル正面玄関より成田空港行き無料送迎バスに乗車（所要約10分）。<br>
+              空港第2ビル駅またはJR成田駅のコインロッカーにボストンバッグを預けて身軽に出発！
             </p>
+
+            <!-- 展開式：ホテル発 ➔ 空港行き送迎バス時刻表 -->
+            <details class="mt-2.5 bg-slate-50 border border-blue-200 rounded-xl overflow-hidden group">
+              <summary class="px-3 py-2 bg-blue-50/90 hover:bg-blue-100 font-bold text-[11px] text-blue-900 cursor-pointer flex items-center justify-between select-none">
+                <span class="flex items-center gap-1.5">
+                  <span>🚌</span>
+                  <span>ホテル発 ➔ 成田空港行き 送迎バス時刻表（朝）</span>
+                </span>
+                <span class="text-[10px] bg-blue-200/70 text-blue-800 px-1.5 py-0.5 rounded font-bold group-open:hidden">▼ 展開</span>
+                <span class="text-[10px] bg-blue-200/70 text-blue-800 px-1.5 py-0.5 rounded font-bold hidden group-open:inline">▲ 閉じる</span>
+              </summary>
+              <div class="p-2.5 text-xs text-slate-700 space-y-2 bg-white border-t border-blue-100">
+                <div class="text-[11px] text-slate-600">
+                  <strong>【ホテル発 空港行き（朝のダイヤ）】</strong><br>
+                  ・08時台：<strong>08:10 / 08:30 / 08:50</strong><br>
+                  ・09時台：<strong>09:20 / 09:50</strong><br>
+                  ・10時台：<strong>10:20 / 10:50</strong><br>
+                  <span class="text-amber-800">※遅れて08:50便を逃しても、09:20発に乗れば成田線や牧場バスの後続便へスムーズにリカバリーできます！</span>
+                </div>
+              </div>
+            </details>
           </div>
         </div>
       </div>
@@ -346,17 +458,53 @@
       <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
         <div class="flex items-start gap-3">
           <div class="bg-emerald-100 text-emerald-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
-            09:41<br>〜10:10
+            09:41<br>〜10:15
           </div>
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2">
               <span class="text-sm font-black text-slate-800">JR成田線 ➔ 滑河駅 ➔ 牧場送迎バス</span>
             </div>
             <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-              ・09:41発：JR成田線（銚子行）乗車（約14分、大人240円・子ども無料）<br>
+              ・09:41発：JR成田駅より成田線（銚子行）乗車（約14分、大人240円・子ども無料）<br>
               ・09:55着：滑河駅到着<br>
-              ・10:00発：駅前から成田ゆめ牧場専用の**無料送迎バス**に乗車（約10分）
+              ・10:05発：駅前から成田ゆめ牧場専用の**無料送迎バス**に乗車（約10分で牧場到着！）
             </p>
+
+            <!-- 展開式：ゆめ牧場 無料送迎バス全便時刻表 -->
+            <details class="mt-2.5 bg-emerald-50/60 border border-emerald-300 rounded-xl overflow-hidden group">
+              <summary class="px-3 py-2 bg-emerald-100/70 hover:bg-emerald-200/70 font-bold text-[11px] text-emerald-950 cursor-pointer flex items-center justify-between select-none">
+                <span class="flex items-center gap-1.5">
+                  <span>🐮</span>
+                  <span>成田ゆめ牧場 送迎バス時刻表（行き＆帰り・土日祝ダイヤ）</span>
+                </span>
+                <span class="text-[10px] bg-emerald-200 text-emerald-900 px-1.5 py-0.5 rounded font-bold group-open:hidden">▼ 展開</span>
+                <span class="text-[10px] bg-emerald-200 text-emerald-900 px-1.5 py-0.5 rounded font-bold hidden group-open:inline">▲ 閉じる</span>
+              </summary>
+              <div class="p-3 text-xs text-slate-700 space-y-2.5 bg-white border-t border-emerald-200">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px]">
+                  <!-- 行き -->
+                  <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-100">
+                    <div class="font-black text-emerald-900 border-b border-emerald-200 pb-1 mb-1.5">【行き】各駅発 ➔ ゆめ牧場</div>
+                    <div>・<strong>滑河駅発（推奨）：</strong></div>
+                    <div class="font-bold text-emerald-950 ml-2">09:05 / 10:05 / 11:15</div>
+                    <div class="mt-1 text-slate-500">・成田駅発：09:00 / 10:10 / 11:10<br><span class="text-[10px] text-rose-700 font-semibold">※土日祝は成田駅便は満席で乗れない場合があるため滑河駅推奨</span></div>
+                  </div>
+                  <!-- 帰り -->
+                  <div class="bg-sky-50/70 p-2.5 rounded-lg border border-sky-100">
+                    <div class="font-black text-sky-900 border-b border-sky-200 pb-1 mb-1.5">【帰り】ゆめ牧場発 ➔ 各駅行</div>
+                    <div>・<strong>滑河駅行き（推奨）：</strong></div>
+                    <div class="font-bold text-sky-950 ml-2">13:20 / 13:45 / 14:35 / 15:30 / 16:45 / 17:20</div>
+                    <div class="mt-1 text-slate-500">・成田駅行き：14:00 / 15:15 / 16:20</div>
+                  </div>
+                </div>
+
+                <div class="bg-amber-50 p-2 rounded-lg border border-amber-200 text-[11px] text-amber-950 leading-relaxed">
+                  💡 <strong>遅れた場合のポイント：</strong><br>
+                  ・もし10:05の滑河駅発に乗り遅れた場合、次の便は <strong>11:15発</strong> です。<br>
+                  ・帰りのバスは <strong>14:35発</strong>（滑河駅行）に乗ると、15:06発の電車に接続して16時台に東京・日暮里へ戻れます！
+                </div>
+              </div>
+            </details>
           </div>
         </div>
       </div>
@@ -634,6 +782,26 @@
           content2Sunny.classList.add('hidden');
           content2Rainy.classList.remove('hidden');
         }
+      }
+    }
+
+    // モーダル内のバス切り替え
+    function switchModalBusTab(type) {
+      const btnHotel = document.getElementById('modal-tab-btn-hotel');
+      const btnFarm = document.getElementById('modal-tab-btn-farm');
+      const viewHotel = document.getElementById('modal-bus-hotel');
+      const viewFarm = document.getElementById('modal-bus-farm');
+
+      if (type === 'hotel') {
+        btnHotel.className = 'py-2 rounded-lg bg-blue-600 text-white shadow-xs';
+        btnFarm.className = 'py-2 rounded-lg text-slate-600 hover:bg-white/60';
+        viewHotel.classList.remove('hidden');
+        viewFarm.classList.add('hidden');
+      } else {
+        btnHotel.className = 'py-2 rounded-lg text-slate-600 hover:bg-white/60';
+        btnFarm.className = 'py-2 rounded-lg bg-emerald-600 text-white shadow-xs';
+        viewHotel.classList.add('hidden');
+        viewFarm.classList.remove('hidden');
       }
     }
 
