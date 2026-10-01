@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黒柳家 成田空港・ホテルバイキング・ゆめ牧場 家族旅行 2026 しおり ✈️🐮</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap');
+    body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .tab-active {
+      background: #0284c7;
+      color: white;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+    }
+    .weather-tab-sunny {
+      background: #059669;
+      color: white;
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+    }
+    .weather-tab-rainy {
+      background: #4f46e5;
+      color: white;
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased min-h-screen pb-24">
+
+  <!-- ホーム画面追加・オフライン案内バナー -->
+  <div id="pwa-banner" class="bg-gradient-to-r from-sky-600 to-indigo-600 text-white px-3 py-2 text-[11px] flex items-center justify-between shadow-xs">
+    <div class="flex items-center gap-1.5 truncate">
+      <span>📲</span>
+      <span class="truncate"><strong>スマホのホーム画面に追加</strong>するとアプリ感覚ですぐ開けます！</span>
+    </div>
+    <button onclick="toggleModal('install-modal')" class="shrink-0 bg-white/20 hover:bg-white/30 px-2 py-0.5 rounded font-bold underline ml-2">やり方</button>
+  </div>
+
+  <!-- ヘッダー -->
+  <header class="bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 text-white shadow-lg sticky top-0 z-30">
+    <div class="max-w-3xl mx-auto px-4 py-3.5 sm:py-5 flex items-center justify-between">
+      <div>
+        <div class="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-md px-2.5 py-0.5 rounded-full text-[11px] font-semibold tracking-wider mb-1">
+          ✈️ 飛行機＆動物満喫ステイ 🐮
+        </div>
+        <h1 class="text-lg sm:text-2xl font-black tracking-tight leading-tight">
+          黒柳家 成田ファミリー旅行 2026 ✨
+        </h1>
+        <p class="text-xs text-sky-100 font-medium">
+          2026.10.03 (土) 〜 10.04 (日) 1泊2日
+        </p>
+      </div>
+      <div class="text-right hidden sm:block text-xs font-semibold">
+        <div class="bg-white/20 px-3 py-1.5 rounded-xl backdrop-blur-md">
+          👨 祐太 👩 奏子<br>👦 行成(6) 👶 直貴(3)
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="max-w-3xl mx-auto px-3 sm:px-4 mt-3">
+
+    <!-- クイック天気・連絡カード -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
+      <a href="https://tenki.jp/forecast/3/11/4510/12211/" target="_blank" class="bg-white p-2.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-2 hover:bg-slate-50 transition-colors">
+        <span class="text-xl">🌤️</span>
+        <div class="min-w-0">
+          <div class="text-[10px] text-slate-500 font-bold">成田市の天気予報</div>
+          <div class="text-xs font-black text-sky-700 truncate">tenki.jp ➔</div>
+        </div>
+      </a>
+      <a href="tel:0476329292" class="bg-white p-2.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-2 hover:bg-slate-50 transition-colors">
+        <span class="text-xl">🏨</span>
+        <div class="min-w-0">
+          <div class="text-[10px] text-slate-500 font-bold">ホテル直通</div>
+          <div class="text-xs font-black text-blue-700 truncate">マロウド成田 📞</div>
+        </div>
+      </a>
+      <a href="tel:0476961001" class="bg-white p-2.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-2 hover:bg-slate-50 transition-colors">
+        <span class="text-xl">🐄</span>
+        <div class="min-w-0">
+          <div class="text-[10px] text-slate-500 font-bold">成田ゆめ牧場</div>
+          <div class="text-xs font-black text-emerald-700 truncate">牧場直通 📞</div>
+        </div>
+      </a>
+      <a href="https://www.keisei.co.jp/keisei/tetudou/skyliner/jp/timetable/index.php" target="_blank" class="bg-white p-2.5 rounded-xl border border-slate-200 shadow-xs flex items-center gap-2 hover:bg-slate-50 transition-colors">
+        <span class="text-xl">🚄</span>
+        <div class="min-w-0">
+          <div class="text-[10px] text-slate-500 font-bold">スカイライナー</div>
+          <div class="text-xs font-black text-indigo-700 truncate">時刻表確認 ➔</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 重要手配サマリー -->
+    <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 mb-4">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-xs font-black text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+          <span>📋</span> 宿泊・食事・重要手配まとめ
+        </h2>
+        <span class="text-[11px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">予約手配完了</span>
+      </div>
+      <div class="space-y-2 text-xs">
+        <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+          <div class="font-bold text-slate-800 flex justify-between">
+            <span>🏨 マロウドインターナショナルホテル成田</span>
+            <span class="text-sky-700 font-black">25,840円（税込）</span>
+          </div>
+          <div class="text-slate-600 mt-1 space-y-0.5 text-[11px]">
+            <div>・部屋：<strong>ツインルーム（26㎡・セミダブルベッド2台）</strong>【添い寝2名無料】</div>
+            <div>・食事：<strong>夕食＆朝食バイキング付</strong>（13F最上階 ルミエール 滑走路ビュー）</div>
+            <div>・特典：<strong>スポーツセンター大浴場＆サウナ利用券付き</strong>（滞在中無料）</div>
+            <div>・送迎：成田空港第2ターミナル 1F「27番乗り場」より無料シャトルバス（約10分）</div>
+            <div class="text-amber-700">※幼児夕食代（3歳以下無料／4歳以上1,100円）はホテル現地精算</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2日目 天気別モード切り替えトグル -->
+    <div class="bg-gradient-to-r from-emerald-50 to-blue-50 border border-emerald-200/80 rounded-2xl p-3 mb-4 shadow-xs">
+      <div class="flex items-center justify-between mb-2">
+        <div class="text-xs font-black text-slate-700 flex items-center gap-1.5">
+          <span>🌦️</span> 2日目の行き先（天気に合わせてワンタップ切り替え）
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-2 text-xs font-black">
+        <button id="btn-sunny" onclick="switchWeather('sunny')" class="py-2.5 px-3 rounded-xl weather-tab-sunny flex items-center justify-center gap-1.5 transition-all">
+          <span>☀️ 晴天プラン</span>
+          <span class="text-[11px] font-normal opacity-90">成田ゆめ牧場</span>
+        </button>
+        <button id="btn-rainy" onclick="switchWeather('rainy')" class="py-2.5 px-3 rounded-xl bg-white text-slate-600 border border-slate-200 flex items-center justify-center gap-1.5 transition-all hover:bg-slate-50">
+          <span>🌧️ 雨天プラン</span>
+          <span class="text-[11px] font-normal opacity-90">航空科学博物館</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 日程タブ -->
+    <div class="flex gap-2 mb-3">
+      <button onclick="switchDay('day1')" id="tab-day1" class="flex-1 py-2.5 rounded-xl font-black text-xs sm:text-sm tab-active transition-all flex items-center justify-center gap-1.5">
+        <span>📅 1日目：10/3 (土)</span>
+        <span class="text-[11px] font-normal opacity-90">空港＆夜景バイキング</span>
+      </button>
+      <button onclick="switchDay('day2')" id="tab-day2" class="flex-1 py-2.5 rounded-xl font-black text-xs sm:text-sm bg-white text-slate-600 border border-slate-200 transition-all flex items-center justify-center gap-1.5 hover:bg-slate-50">
+        <span>📅 2日目：10/4 (日)</span>
+        <span id="tab-day2-subtitle" class="text-[11px] font-normal opacity-90">成田ゆめ牧場</span>
+      </button>
+    </div>
+
+    <!-- ==================== 1日目タイムライン ==================== -->
+    <div id="content-day1" class="space-y-3">
+
+      <!-- スポット 1 -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 relative overflow-hidden">
+        <div class="flex items-start gap-3">
+          <div class="bg-blue-100 text-blue-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            15:00<br><span class="text-[10px] font-normal">START</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">ECCレッスン終了 ➔ 日暮里駅へ</span>
+              <span class="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-bold">集合</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              レッスン終了後、身支度を整えて日暮里駅へ移動。荷物は事前にまとめておくとスムーズです！
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- スポット 2 -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 relative overflow-hidden">
+        <div class="flex items-start gap-3">
+          <div class="bg-sky-100 text-sky-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            15:45<br><span class="text-[10px] font-normal">移動</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">京成スカイライナー45号 乗車</span>
+              <span class="text-[10px] bg-sky-100 text-sky-800 px-1.5 py-0.5 rounded font-bold">全席指定</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              日暮里から成田空港まで<strong>わずか36分（時速160km）</strong>！<br>
+              全席指定なので3歳・6歳連れでも座れて安心。窓の外の景色や新幹線並みのスピード感に子どもたちも大興奮です。
+            </p>
+            <div class="mt-2 text-[11px] bg-sky-50 text-sky-700 p-2 rounded-lg font-medium">
+              💡 未就学児（3歳・6歳）は保護者の膝上なら乗車券・特急券ともに無料です。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- スポット 3 -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 relative overflow-hidden">
+        <div class="flex items-start gap-3">
+          <div class="bg-indigo-100 text-indigo-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            16:21<br>〜17:45
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">成田空港 第2ターミナル散策 ✈️</span>
+              <span class="text-[10px] bg-indigo-100 text-indigo-800 px-1.5 py-0.5 rounded font-bold">観光</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              空港第2ビル駅に到着後、ターミナル内をたっぷり散策！
+            </p>
+            <ul class="text-xs text-slate-600 mt-1.5 space-y-1 list-disc list-inside">
+              <li><strong>4階 見学デッキ（南・北）</strong>：世界各国の大型ジャンボジェット機が轟音とともに離着陸！夕暮れの滑走路ライトも綺麗です。</li>
+              <li><strong>ガチャガチャ横丁・ポケモンストア</strong>：成田空港限定グッズやカプセルトイがずらり。</li>
+              <li><strong>空港限定スイーツ・おみやげ</strong>：おやつや夜食の調達にも便利。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- スポット 4 -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 relative overflow-hidden">
+        <div class="flex items-start gap-3">
+          <div class="bg-blue-100 text-blue-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            18:00<br><span class="text-[10px] font-normal">送迎バス</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">無料送迎バスでホテルへ移動</span>
+              <span class="text-[10px] bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded font-bold">所要約10分</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              第2ターミナル1階の<strong>「27番乗り場」</strong>からマロウド成田の無料送迎バスに乗車。ホテル玄関まで直行します。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- スポット 5 -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 relative overflow-hidden">
+        <div class="flex items-start gap-3">
+          <div class="bg-emerald-100 text-emerald-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            18:15<br><span class="text-[10px] font-normal">チェックイン</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">ホテル到着・チェックイン 🏨</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              26㎡のツインルームへ。荷物を置いて手洗いうがい。お部屋の窓から飛行機が見えるかチェック！
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- スポット 6 -->
+      <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-3.5 sm:p-4 shadow-sm border border-amber-200 relative overflow-hidden">
+        <div class="flex items-start gap-3">
+          <div class="bg-amber-500 text-white font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            19:00<br>〜20:30
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-amber-950">🍽️ 最上階13F「ルミエール」夕食バイキング</span>
+              <span class="text-[10px] bg-amber-200 text-amber-900 px-1.5 py-0.5 rounded font-bold">メインイベント</span>
+            </div>
+            <p class="text-xs text-amber-900 mt-1 leading-relaxed">
+              <strong>眼下に広がる滑走路のイルミネーション夜景！</strong><br>
+              目の前を着陸してくる光の飛行機を眺めながら、シェフ特製のローストビーフ、和洋中料理、スイーツ、ソフトドリンクバーを心ゆくまで堪能。
+            </p>
+            <div class="mt-2 text-[11px] bg-white/80 p-2 rounded-lg text-amber-900 border border-amber-200">
+              👶 <strong>子ども料金</strong>：直貴くん(3)は無料！行成くん(6)は1,100円（現地精算）。唐揚げ・ポテト・カレー・デザートなどキッズ大好物メニュー多数！
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- スポット 7 -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 relative overflow-hidden">
+        <div class="flex items-start gap-3">
+          <div class="bg-teal-100 text-teal-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            20:45<br>〜21:30
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">大浴場＆サウナでリフレッシュ ♨️</span>
+              <span class="text-[10px] bg-teal-100 text-teal-800 px-1.5 py-0.5 rounded font-bold">プラン特典無料</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              ホテル内スポーツセンターの大浴場へ。広い湯船で子どもたちと温まり、1日の疲れをリフレッシュ！
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- スポット 8 -->
+      <div class="bg-slate-50 rounded-2xl p-3.5 sm:p-4 border border-slate-200">
+        <div class="flex items-center gap-2 text-xs font-black text-slate-700">
+          <span>🌙 22:00 就寝</span>
+          <span class="font-normal text-slate-500">（セミダブル幅120cm×2台でゆったり添い寝安眠）</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== 2日目タイムライン（晴天：ゆめ牧場） ==================== -->
+    <div id="content-day2-sunny" class="space-y-3 hidden">
+
+      <!-- 朝食 -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-amber-100 text-amber-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            07:30<br>〜08:30
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">🍳 13F「ルミエール」朝食バイキング</span>
+              <span class="text-[10px] bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded font-bold">幼児無料</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              朝の澄んだ光の中で、次々と離陸していく国際線フライトを見ながらのモーニングビュッフェ！未就学児は**2人とも無料**です。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動・ロッカー -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-blue-100 text-blue-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            09:00<br>〜09:30
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">チェックアウト ➔ JR成田駅へ</span>
+              <span class="text-[10px] bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded font-bold">無料送迎</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              ホテル発の無料送迎バスでJR成田駅（東口）へ移動。<br>
+              <strong>成田駅改札外のコインロッカーに大きなボストンバッグを預けて身軽になります！</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 電車＆送迎バス -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-emerald-100 text-emerald-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            09:41<br>〜10:10
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">JR成田線 ➔ 滑河駅 ➔ 牧場送迎バス</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              ・09:41発：JR成田線（銚子行）乗車（約14分、大人240円・子ども無料）<br>
+              ・09:55着：滑河駅到着<br>
+              ・10:00発：駅前から成田ゆめ牧場専用の**無料送迎バス**に乗車（約10分）
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ゆめ牧場滞在 -->
+      <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-3.5 sm:p-4 shadow-sm border border-emerald-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-emerald-600 text-white font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            10:10<br>〜14:30
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-emerald-950">🐄 成田ゆめ牧場を満喫！</span>
+              <span class="text-[10px] bg-emerald-200 text-emerald-900 px-1.5 py-0.5 rounded font-bold">たっぷり遊ぶ</span>
+            </div>
+            <ul class="text-xs text-emerald-900 mt-1.5 space-y-1 list-disc list-inside">
+              <li><strong>動物ふれあい</strong>：ヤギ・ヒツジのエサやり、ウサギ・モルモットの抱っこ。</li>
+              <li><strong>乳搾り体験（11:30〜：無料）</strong>：大きな牛のおっぱいにタッチ！</li>
+              <li><strong>乗り物体験</strong>：大型トラクターワゴン、トロッコ列車、芝すべり。</li>
+              <li>🍽️ <strong>ランチ</strong>：手ぶらBBQハウス、または名物ゆめこちゃんバーガーや自家製チーズピザ。</li>
+              <li>🍦 <strong>おやつ</strong>：名物・超濃厚な搾りたてミルクソフトクリーム！</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 帰り -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-indigo-100 text-indigo-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            14:40<br>〜16:47
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">帰路：送迎バス ➔ 成田駅 ➔ 日暮里駅</span>
+              <span class="text-[10px] bg-indigo-100 text-indigo-800 px-1.5 py-0.5 rounded font-bold">夕方帰着</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              ・14:40発：ゆめ牧場発の無料送迎バスで滑河駅へ（14:50着）<br>
+              ・15:06発：JR成田線で成田駅へ（15:20着）。ロッカーの荷物を回収。<br>
+              ・15:39発：京成成田駅より<strong>京成本線特急（京成上野行）</strong>に乗車。乗り換えなしで直通！<br>
+              ・<strong>16:47着：日暮里駅に無事帰着！</strong>（電車内で子どもたちもお昼寝できます）
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== 2日目タイムライン（雨天：航空科学博物館） ==================== -->
+    <div id="content-day2-rainy" class="space-y-3 hidden">
+
+      <!-- 朝食 -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-amber-100 text-amber-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            08:00<br>〜09:00
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">🍳 13F「ルミエール」朝食バイキング</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              雨天時は少し朝をのんびりスタート。雨の滑走路を見ながら温かい朝食をたっぷり楽しみます。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動 -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-blue-100 text-blue-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            09:30<br>〜10:00
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">チェックアウト ➔ 空港第2ターミナルへ</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              ホテル送迎バスで成田空港第2ターミナルへ戻ります（約10分）。<br>
+              空港のコインロッカーに大きな荷物を預けて身軽に！
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 路線バス -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-indigo-100 text-indigo-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            10:15<br>〜10:35
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">空港から路線バスで「航空科学博物館」へ</span>
+              <span class="text-[10px] bg-indigo-100 text-indigo-800 px-1.5 py-0.5 rounded font-bold">直行バス約15分</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              第2ターミナル1階バス乗り場から路線バス（成田空港〜航空科学博物館線）に乗車。博物館の目の前で降車できます。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 航空科学博物館 滞在 -->
+      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-3.5 sm:p-4 shadow-sm border border-blue-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-indigo-600 text-white font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            10:35<br>〜14:15
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-indigo-950">✈️ 航空科学博物館（完全屋内！）</span>
+              <span class="text-[10px] bg-indigo-200 text-indigo-900 px-1.5 py-0.5 rounded font-bold">雨天鉄板</span>
+            </div>
+            <p class="text-xs text-indigo-900 mt-1 leading-relaxed">
+              入館料：大人700円 / 幼児(4歳以上)200円 と超リーズナブル！
+            </p>
+            <ul class="text-xs text-indigo-900 mt-1.5 space-y-1 list-disc list-inside">
+              <li><strong>本物のコックピット体験</strong>：操縦桿を動かしたりスイッチを押してパイロット気分！</li>
+              <li><strong>大型模型・体験シミュレーター</strong>：ボタンを押すとライトが光りプロペラが回る仕掛け。</li>
+              <li><strong>5階 展望展示室</strong>：雨雲を突っ切って水しぶきをあげて着陸する大迫力の飛行機を暖かい室内から見学。</li>
+              <li>🍽️ <strong>ランチ</strong>：館内4階の展望レストラン「バルーン」でお子様ランチ（飛行機プレート）やオムライス。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 帰り -->
+      <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-sky-100 text-sky-800 font-black text-xs px-2 py-1 rounded-lg shrink-0 text-center">
+            14:30<br>〜16:40
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-black text-slate-800">バスで空港へ ➔ スカイライナーで日暮里へ</span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              ・14:30頃：博物館前からバスで空港第2ビルへ戻る（約15分）<br>
+              ・ロッカーの荷物を回収し、15時台のスカイライナーまたはアクセス特急に乗車。<br>
+              ・<strong>16:30〜17:00頃：日暮里駅にスムーズに帰着！</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 持ち物チェックリスト（localStorage保存機能付き） -->
+    <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 mt-4">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-xs font-black text-slate-700 flex items-center gap-1.5">
+          <span>🎒</span> 家族の持ち物チェックリスト
+        </h2>
+        <span class="text-[10px] text-slate-400">タップでチェック保存</span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs" id="checklist">
+        <!-- JSで動的生成 -->
+      </div>
+    </div>
+
+    <!-- 緊急連絡先・病院案内 -->
+    <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200 mt-4">
+      <h2 class="text-xs font-black text-slate-700 flex items-center gap-1.5 mb-2.5">
+        <span>🚑</span> 緊急連絡先・周辺救急病院
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+        <div class="bg-red-50 p-2.5 rounded-xl border border-red-100">
+          <div class="font-bold text-red-800">成田赤十字病院（救急・小児科対応）</div>
+          <div class="text-[11px] text-red-700 mt-0.5">成田市飯田町90-1</div>
+          <a href="tel:0476222311" class="text-xs font-black text-red-600 underline block mt-1">📞 0476-22-2311</a>
+        </div>
+        <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+          <div class="font-bold text-slate-800">子ども医療電話相談（休日・夜間）</div>
+          <div class="text-[11px] text-slate-600 mt-0.5">急な発熱・ケガの相談窓口</div>
+          <a href="tel:8000" class="text-xs font-black text-blue-600 underline block mt-1">📞 #8000（局番なし）</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- PWAホーム画面追加モーダル -->
+  <div id="install-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 hidden backdrop-blur-xs">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-5 shadow-2xl">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-black text-sm text-slate-800 flex items-center gap-1.5">
+          <span>📲</span> ホーム画面に追加する方法
+        </h3>
+        <button onclick="toggleModal('install-modal')" class="text-slate-400 hover:text-slate-600 text-lg">✕</button>
+      </div>
+      <div class="space-y-3 text-xs text-slate-600">
+        <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200">
+          <div class="font-bold text-sky-700 mb-1 flex items-center gap-1">
+            <span>🍏</span> iPhone (Safari) の場合
+          </div>
+          <ol class="list-decimal list-inside space-y-0.5 text-[11px]">
+            <li>画面下の「共有ボタン（四角から矢印）」をタップ</li>
+            <li>メニューから「<strong>ホーム画面に追加</strong>」を選択</li>
+            <li>右上の「追加」を押すとアイコンが作成されます！</li>
+          </ol>
+        </div>
+        <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200">
+          <div class="font-bold text-emerald-700 mb-1 flex items-center gap-1">
+            <span>🤖</span> Android (Chrome) の場合
+          </div>
+          <ol class="list-decimal list-inside space-y-0.5 text-[11px]">
+            <li>右上の「︙（メニュー）」をタップ</li>
+            <li>「<strong>ホーム画面に追加</strong>」または「アプリをインストール」を選択</li>
+          </ol>
+        </div>
+      </div>
+      <button onclick="toggleModal('install-modal')" class="w-full mt-4 bg-sky-600 text-white font-bold py-2.5 rounded-xl text-xs shadow-md hover:bg-sky-700">
+        閉じる
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // 状態管理
+    let currentDay = 'day1';
+    let currentWeather = 'sunny'; // 'sunny' or 'rainy'
+
+    function switchDay(day) {
+      currentDay = day;
+      const tab1 = document.getElementById('tab-day1');
+      const tab2 = document.getElementById('tab-day2');
+      const content1 = document.getElementById('content-day1');
+      const content2Sunny = document.getElementById('content-day2-sunny');
+      const content2Rainy = document.getElementById('content-day2-rainy');
+
+      if (day === 'day1') {
+        tab1.className = "flex-1 py-2.5 rounded-xl font-black text-xs sm:text-sm tab-active transition-all flex items-center justify-center gap-1.5";
+        tab2.className = "flex-1 py-2.5 rounded-xl font-black text-xs sm:text-sm bg-white text-slate-600 border border-slate-200 transition-all flex items-center justify-center gap-1.5 hover:bg-slate-50";
+        content1.classList.remove('hidden');
+        content2Sunny.classList.add('hidden');
+        content2Rainy.classList.add('hidden');
+      } else {
+        tab1.className = "flex-1 py-2.5 rounded-xl font-black text-xs sm:text-sm bg-white text-slate-600 border border-slate-200 transition-all flex items-center justify-center gap-1.5 hover:bg-slate-50";
+        tab2.className = "flex-1 py-2.5 rounded-xl font-black text-xs sm:text-sm tab-active transition-all flex items-center justify-center gap-1.5";
+        content1.classList.add('hidden');
+        if (currentWeather === 'sunny') {
+          content2Sunny.classList.remove('hidden');
+          content2Rainy.classList.add('hidden');
+        } else {
+          content2Sunny.classList.add('hidden');
+          content2Rainy.classList.remove('hidden');
+        }
+      }
+    }
+
+    function switchWeather(weather) {
+      currentWeather = weather;
+      const btnSunny = document.getElementById('btn-sunny');
+      const btnRainy = document.getElementById('btn-rainy');
+      const subtitle = document.getElementById('tab-day2-subtitle');
+      const content2Sunny = document.getElementById('content-day2-sunny');
+      const content2Rainy = document.getElementById('content-day2-rainy');
+
+      if (weather === 'sunny') {
+        btnSunny.className = "py-2.5 px-3 rounded-xl weather-tab-sunny flex items-center justify-center gap-1.5 transition-all";
+        btnRainy.className = "py-2.5 px-3 rounded-xl bg-white text-slate-600 border border-slate-200 flex items-center justify-center gap-1.5 transition-all hover:bg-slate-50";
+        subtitle.innerText = "成田ゆめ牧場";
+        if (currentDay === 'day2') {
+          content2Sunny.classList.remove('hidden');
+          content2Rainy.classList.add('hidden');
+        }
+      } else {
+        btnSunny.className = "py-2.5 px-3 rounded-xl bg-white text-slate-600 border border-slate-200 flex items-center justify-center gap-1.5 transition-all hover:bg-slate-50";
+        btnRainy.className = "py-2.5 px-3 rounded-xl weather-tab-rainy flex items-center justify-center gap-1.5 transition-all";
+        subtitle.innerText = "航空科学博物館";
+        if (currentDay === 'day2') {
+          content2Sunny.classList.add('hidden');
+          content2Rainy.classList.remove('hidden');
+        }
+      }
+    }
+
+    function toggleModal(id) {
+      const modal = document.getElementById(id);
+      modal.classList.toggle('hidden');
+    }
+
+    // 持ち物チェックリスト管理
+    const defaultItems = [
+      { id: 'item-1', text: '健康保険証・医療証（子ども2人分）', checked: false },
+      { id: 'item-2', text: '母子手帳・お薬手帳', checked: false },
+      { id: 'item-3', text: '着替え（子ども各2セット＋下着）', checked: false },
+      { id: 'item-4', text: 'オムツ・おしりふき・消臭袋', checked: false },
+      { id: 'item-5', text: '羽織もの（朝晩の冷え込み対策）', checked: false },
+      { id: 'item-6', text: '折りたたみ傘（雨具）', checked: false },
+      { id: 'item-7', text: 'スマホ充電器・モバイルバッテリー', checked: false },
+      { id: 'item-8', text: '子ども用おやつ・水筒・除菌シート', checked: false }
+    ];
+
+    function initChecklist() {
+      const saved = localStorage.getItem('narita_checklist_2026');
+      const items = saved ? JSON.parse(saved) : defaultItems;
+      const container = document.getElementById('checklist');
+      container.innerHTML = '';
+
+      items.forEach((item, index) => {
+        const div = document.createElement('label');
+        div.className = "flex items-center gap-2 p-2 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100 cursor-pointer select-none transition-colors";
+        div.innerHTML = `
+          <input type="checkbox" ${item.checked ? 'checked' : ''} onchange="toggleItem(${index})" class="rounded text-sky-600 focus:ring-sky-500 w-4 h-4">
+          <span class="${item.checked ? 'line-through text-slate-400' : 'text-slate-700 font-medium'} text-[11px] truncate">${item.text}</span>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function toggleItem(index) {
+      const saved = localStorage.getItem('narita_checklist_2026');
+      const items = saved ? JSON.parse(saved) : defaultItems;
+      items[index].checked = !items[index].checked;
+      localStorage.setItem('narita_checklist_2026', JSON.stringify(items));
+      initChecklist();
+    }
+
+    // 初期実行
+    document.addEventListener('DOMContentLoaded', () => {
+      initChecklist();
+    });
+  </script>
+</body>
+</html>
