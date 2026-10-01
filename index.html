@@ -187,11 +187,7 @@
         🎒 持ち物
         <div class="text-[10px] font-normal opacity-90">チェック表</div>
       </button>
-      <button onclick="switchTab('budget')" id="tab-budget" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900">
-        💰 お会計
-        <div class="text-[10px] font-normal opacity-90">旅費メモ</div>
-      </button>
-    </div>
+      </div>
 
     <!-- ======================================================== -->
     <!-- ==================== 1日目 (11/16 月) ==================== -->
@@ -1286,95 +1282,103 @@
 
     </div>
 
-    <!-- ==================== 持ち物・子連れレスキューメモ ==================== -->
+    
+    <!-- ==================== 持ち物・子連れ完全準備チェックリスト ==================== -->
     <div id="content-packing" class="space-y-4 hidden">
-      
+
       <!-- 子連れ安心レスキュー情報（超実用） -->
       <div class="bg-gradient-to-r from-teal-50 to-emerald-50 rounded-2xl p-4 sm:p-5 shadow-sm border border-emerald-200">
         <h3 class="font-black text-emerald-900 text-sm mb-2.5 flex items-center gap-2">
-          <span>👶</span> 子連れお助けメモ（授乳室・オムツ・ベビーカー）
+          <span>👶</span> 現地のお助けスポット情報（授乳室・オムツ・ベビーカー）
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-          <div class="bg-white/80 p-2.5 rounded-xl border border-emerald-100">
-            <strong>・太宰府天満宮：</strong>案内所横に授乳・オムツ替えスペースあり。だざいふ遊園地内にも完備。
+          <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+            <strong class="text-emerald-800">・太宰府天満宮：</strong>案内所横に授乳・オムツ替えスペースあり。だざいふ遊園地内にも完備。
           </div>
-          <div class="bg-white/80 p-2.5 rounded-xl border border-emerald-100">
-            <strong>・マリンワールド：</strong>館内完全バリアフリー。ベビーカー無料貸出あり。授乳室2ヶ所。
+          <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+            <strong class="text-emerald-800">・マリンワールド：</strong>館内完全バリアフリー。ベビーカー無料貸出あり。授乳室2ヶ所。
           </div>
-          <div class="bg-white/80 p-2.5 rounded-xl border border-emerald-100">
-            <strong>・アンパンマン：</strong>館内に超充実のベビールーム（調乳温水器・オムツ自販機・離乳食スペース完備）。
+          <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+            <strong class="text-emerald-800">・アンパンマン：</strong>館内に超充実のベビールーム（調乳温水器・オムツ自販機・離乳食スペース完備）。
           </div>
-          <div class="bg-white/80 p-2.5 rounded-xl border border-emerald-100">
-            <strong>・福岡空港：</strong>保安検査場通過後も各搭乗口近くにキッズスペース・授乳室あり。
+          <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+            <strong class="text-emerald-800">・福岡空港：</strong>保安検査通過後も各搭乗口近くにキッズスペース・授乳室あり。
           </div>
         </div>
       </div>
 
+      <!-- ① 貴重品・書類（手持ちバッグへ） -->
       <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
-        <h3 class="font-bold text-slate-800 text-sm mb-3 flex items-center gap-2">
-          <span>🚨</span> 最重要アイテム（絶対忘れない！）
-        </h3>
+        <div class="flex items-center justify-between mb-2.5 border-b border-slate-100 pb-2">
+          <h3 class="font-black text-slate-800 text-sm flex items-center gap-2">
+            <span>🚨</span> 貴重品・手続き（機内・手持ちバッグ）
+          </h3>
+          <span class="text-[10px] bg-rose-100 text-rose-700 font-bold px-2 py-0.5 rounded-full">絶対忘れない</span>
+        </div>
         <ul class="text-xs text-slate-700 space-y-2">
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> 健康保険証 ＆ 乳幼児医療証（荒川区のもの・財布にIN）</li>
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> 常備薬・解熱剤（アンヒバ/カロナール、絆創膏）</li>
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> 現金（千円札10枚ほど・屋台は現金オンリー多め！）</li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>健康保険証 ＆ 乳幼児医療証（荒川区）：</strong>子どもが急に発熱した時の受診に必須！</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>お薬手帳 ＆ 常備薬・座薬：</strong>解熱剤（アンヒバ座薬/カロナール）、絆創膏、整腸剤。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>現金（千円札10〜15枚・小銭）：</strong><strong>博多屋台は現金オンリー多め！</strong>太宰府のお賽銭やだざいふ遊園地の乗り物券にも。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>スマホ充電器 ＆ 大容量モバイルバッテリー：</strong>写真撮影とGoogleマップで1日中スマホを使うため手持ち必須！</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>クレジットカード ＆ 交通系ICカード（Suica/PASMO）：</strong>地下鉄・西鉄電車・JRはすべてSuica/PASMOでそのままタッチ乗車可能！</span></li>
         </ul>
       </div>
 
+      <!-- ② 3歳・6歳の子連れ専用アイテム -->
       <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
-        <h3 class="font-bold text-slate-800 text-sm mb-3 flex items-center gap-2">
-          <span>✈️</span> 飛行機・移動お助けグッズ
-        </h3>
+        <div class="flex items-center justify-between mb-2.5 border-b border-slate-100 pb-2">
+          <h3 class="font-black text-slate-800 text-sm flex items-center gap-2">
+            <span>👦👶</span> 子ども用（3歳＆6歳）ケア＆移動グッズ
+          </h3>
+          <span class="text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-full">快適のキモ</span>
+        </div>
         <ul class="text-xs text-slate-700 space-y-2">
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> 耳抜き用お菓子（ラムネ・グミ・ストロー付きジュース）</li>
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> 動画事前オフラインダウンロード（タブレット/スマホ）</li>
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> 音の出ないシールブック・お絵かき</li>
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> モバイルバッテリー ＆ スマホ充電器</li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>オムツ（3歳次男用）：</strong>1日4〜5枚×3日分（約15枚）＋おしりふき1パック。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>ウェットティッシュ（除菌＆手口ふき）：</strong>屋台、天ぷら、食べ歩きで超多用します！多めに携帯。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>飛行機の耳抜き用お菓子：</strong>離陸・着陸時に噛んだり飲んだりするもの（ラムネ、グミ、ストロー付きパックジュース）。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>移動時の退屈対策：</strong>動画の事前オフラインダウンロード（Prime Video/YouTube）、音の出ないシールブック、100均のお絵かきボード。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>B型ベビーカー または 抱っこ紐（コンパクト）：</strong>太宰府参道や水族館帰りに3歳児が寝落ちした時の救世主。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>食事用エプロン ＆ 子ども用スプーンフォーク：</strong>屋台やうどん屋さんであると安心。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>ビニール袋（4〜5枚）：</strong>汚れた服、ゴミ、濡れ物用。</span></li>
         </ul>
       </div>
 
+      <!-- ③ 着替え・服装（11月中旬の福岡気候対策） -->
       <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
-        <h3 class="font-bold text-slate-800 text-sm mb-3 flex items-center gap-2">
-          <span>🧥</span> 服装・防寒対策（11月中旬）
-        </h3>
+        <div class="flex items-center justify-between mb-2.5 border-b border-slate-100 pb-2">
+          <h3 class="font-black text-slate-800 text-sm flex items-center gap-2">
+            <span>🧥</span> 服装・着替え（11月中旬の気候対策）
+          </h3>
+          <span class="text-[10px] bg-sky-100 text-sky-800 font-bold px-2 py-0.5 rounded-full">気温10〜18℃</span>
+        </div>
+        <div class="text-xs text-slate-600 mb-2 leading-relaxed">
+          11月中旬の福岡は日中は長袖1枚で快適ですが、<strong>「夜の屋台」や「博多湾の高速船」「海の中道」は海風でかなり冷え込みます。</strong>
+        </div>
         <ul class="text-xs text-slate-700 space-y-2">
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> 着脱しやすい上着（薄手ダウン/ウインドブレーカー）※海と夜屋台は冷えます！</li>
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> 着替え（多め）・ウェットティッシュ</li>
-          <li class="flex items-center gap-2"><input type="checkbox" class="rounded text-sky-600"> ビニール袋（濡れ物・ゴミ用）</li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>大人用の上着：</strong>薄手ダウン、マウンテンパーカー、トレンチコートなど風を通さないアウター。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>子ども用の上着：</strong>裏起毛パーカー、ウインドブレーカー、または軽めのジャンパー。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>子どもの着替え：</strong>2泊3日分＋予備2セット（食べこぼし・おもらし対策）。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>パジャマ：</strong>ホテルにもナイトウェアがありますが、お子様用はお気に入りのパジャマ持参が安心です。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>歩きやすいスニーカー：</strong>太宰府参道、水族館、神社境内などよく歩きます！</span></li>
         </ul>
       </div>
 
-    </div>
-
-  
-    <!-- ==================== 旅費・割り勘メモ ==================== -->
-    <div id="content-budget" class="space-y-3 hidden">
+      <!-- ④ アメニティ・日用品 -->
       <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
-        <h3 class="font-black text-slate-800 text-sm mb-1 flex items-center gap-2">
-          <span>💰</span> 旅の支出・お小遣いメモ
-        </h3>
-        <p class="text-xs text-slate-500 mb-3">屋台やお土産など、その場でサッとメモできます（スマホ内に保存）</p>
-
-        <!-- 入力フォーム -->
-        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 mb-3">
-          <div class="grid grid-cols-3 gap-2 mb-2">
-            <input type="text" id="expense-name" placeholder="品名（例: 梅ヶ枝餅）" class="col-span-2 px-2.5 py-1.5 text-xs bg-white rounded-lg border border-slate-300">
-            <input type="number" id="expense-amount" placeholder="金額 (円)" class="px-2.5 py-1.5 text-xs bg-white rounded-lg border border-slate-300">
-          </div>
-          <button onclick="addExpense()" class="w-full py-1.5 bg-sky-600 text-white rounded-lg font-bold text-xs hover:bg-sky-700 transition-colors">
-            ＋ 支出を追加する
-          </button>
+        <div class="flex items-center justify-between mb-2.5 border-b border-slate-100 pb-2">
+          <h3 class="font-black text-slate-800 text-sm flex items-center gap-2">
+            <span>🧴</span> アメニティ・あると便利な小物
+          </h3>
+          <span class="text-[10px] bg-purple-100 text-purple-700 font-bold px-2 py-0.5 rounded-full">快適グッズ</span>
         </div>
-
-        <!-- 支出リスト -->
-        <div class="flex items-center justify-between pb-2 border-b border-slate-200 text-xs font-bold text-slate-700">
-          <span>メモした支出合計</span>
-          <span id="expense-total" class="text-base text-rose-600 font-black font-mono">0 円</span>
-        </div>
-        <div id="expense-list" class="divide-y divide-slate-100 text-xs text-slate-600 max-h-60 overflow-y-auto mt-2">
-          <!-- JSでレンダリング -->
-        </div>
+        <ul class="text-xs text-slate-700 space-y-2">
+          <li class="flex items-start gap-2"><span>・</span><span><strong>子ども用歯ブラシ・歯磨き粉：</strong>ホテルの大人用は大きいため持参。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>折りたたみ傘（1〜2本）：</strong>急な小雨対策。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>ママのスキンケア・メイク道具・ヘアゴム：</strong>ホテル大浴場でポカポカ温まった後に。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>エコバッグ（大きめ1〜2枚）：</strong>お土産（通りもん、めんべい、明太子）や脱いだ上着をまとめるのに大活躍！</span></li>
+        </ul>
       </div>
+
     </div>
 
   </main>
@@ -1426,7 +1430,7 @@
   <script>
     // タブ切り替え
     function switchTab(tabId) {
-      ['day1', 'day2', 'day3', 'packing', 'budget'].forEach(id => {
+      ['day1', 'day2', 'day3', 'packing'].forEach(id => {
         const btn = document.getElementById('tab-' + id);
         const content = document.getElementById('content-' + id);
         if (!btn || !content) return;
@@ -1448,70 +1452,17 @@
 
     
 
-    // 旅費メモ機能
-    function renderExpenses() {
-      const listEl = document.getElementById('expense-list');
-      if (!listEl) return;
-      const expenses = JSON.parse(localStorage.getItem('fukuoka_expenses') || '[]');
-      let total = 0;
-
-      if (expenses.length === 0) {
-        listEl.innerHTML = '<div class="py-4 text-center text-slate-400 text-xs">まだ記録はありません</div>';
-      } else {
-        listEl.innerHTML = expenses.map((item, idx) => {
-          total += Number(item.amount);
-          return `
-            <div class="flex items-center justify-between py-2">
-              <div>
-                <div class="font-bold text-slate-700">${item.name}</div>
-                <div class="text-[10px] text-slate-400">${item.date}</div>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800 font-mono">¥${Number(item.amount).toLocaleString()}</span>
-                <button onclick="deleteExpense(${idx})" class="text-rose-400 hover:text-rose-600 text-xs px-1">×</button>
-              </div>
-            </div>
-          `;
-        }).join('');
-      }
-
-      document.getElementById('expense-total').textContent = `¥${total.toLocaleString()}`;
-    }
-
-    function addExpense() {
-      const nameInput = document.getElementById('expense-name');
-      const amountInput = document.getElementById('expense-amount');
-      const name = nameInput.value.trim();
-      const amount = parseInt(amountInput.value);
-
-      if (!name || isNaN(amount) || amount <= 0) {
-        alert('品名と正しい金額を入力してください');
-        return;
-      }
-
-      const expenses = JSON.parse(localStorage.getItem('fukuoka_expenses') || '[]');
-      const now = new Date();
-      const dateStr = `${now.getMonth()+1}/${now.getDate()} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
-
-      expenses.unshift({ name, amount, date: dateStr });
-      localStorage.setItem('fukuoka_expenses', JSON.stringify(expenses));
-
-      nameInput.value = '';
-      amountInput.value = '';
-      renderExpenses();
-    }
+    
 
     function deleteExpense(idx) {
       const expenses = JSON.parse(localStorage.getItem('fukuoka_expenses') || '[]');
       expenses.splice(idx, 1);
       localStorage.setItem('fukuoka_expenses', JSON.stringify(expenses));
-      renderExpenses();
-    }
+      }
 
     // 初期化
     document.addEventListener('DOMContentLoaded', () => {
-      renderExpenses();
-    });
+      });
   </script>
 
 </body>
