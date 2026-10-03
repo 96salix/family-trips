@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黒柳家 福岡家族旅行 2026 しおり ✈️</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap');
+    body {
+      font-family: 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .tab-active {
+      background: #0284c7;
+      color: white;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+    }
+    .pin {
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .pin:hover {
+      transform: scale(1.25) translateY(-4px);
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+    }
+    .pin-active {
+      transform: scale(1.3) translateY(-6px);
+      filter: drop-shadow(0 8px 16px rgba(2, 132, 199, 0.45));
+    }
+    .route-line {
+      stroke-dasharray: 6 6;
+      animation: dash 30s linear infinite;
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -1000;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased min-h-screen pb-20">
+
+  
+    <!-- ホーム画面追加・オフライン案内バナー -->
+    <div id="pwa-banner" class="bg-gradient-to-r from-sky-600 to-indigo-600 text-white px-3 py-2 text-[11px] flex items-center justify-between shadow-xs">
+      <div class="flex items-center gap-1.5 truncate">
+        <span>📲</span>
+        <span class="truncate"><strong>スマホのホーム画面に追加</strong>するとアプリ感覚ですぐ開けます！</span>
+      </div>
+      <button onclick="toggleModal('install-modal')" class="shrink-0 bg-white/20 hover:bg-white/30 px-2 py-0.5 rounded font-bold underline ml-2">やり方</button>
+    </div>
+
+  <!-- ヘッダー -->
+  <div class="bg-slate-900 text-white px-4 py-1.5 text-xs flex justify-between items-center max-w-3xl mx-auto">
+      <a href="../" class="inline-flex items-center gap-1 hover:underline font-bold text-[11px] text-white">🏠 旅ポータルへ戻る</a>
+      <span class="text-[10px] text-slate-400">黒柳家 旅のしおり</span>
+    </div>
+    <header class="bg-gradient-to-r from-sky-500 via-teal-500 to-emerald-500 text-white shadow-lg sticky top-0 z-30">
+    <div class="max-w-3xl mx-auto px-4 py-4 sm:py-6 flex items-center justify-between">
+      <div>
+        <div class="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-md px-2.5 py-0.5 rounded-full text-[11px] font-semibold tracking-wider mb-1">
+          🎂 パパ34歳バースデー記念
+        </div>
+        <h1 class="text-xl sm:text-2xl font-black tracking-tight leading-tight">
+          黒柳家 福岡 Family Trip 2026 ✨
+        </h1>
+        <p class="text-xs text-sky-100 font-medium">
+          2026.11.16 (月) 〜 11.18 (水) 2泊3日
+        </p>
+      </div>
+      <div class="text-right hidden sm:block text-xs font-semibold">
+        <div class="bg-white/20 px-3 py-1.5 rounded-xl backdrop-blur-md">
+          👨 祐太 👩 奏子<br>👦 行成(6) 👶 直貴(3)
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="max-w-3xl mx-auto px-3 sm:px-4 mt-3">
+
+    <!-- クイック天気・連絡カード -->
+    <div class="grid grid-cols-2 gap-2 mb-3">
+      <a href="https://tenki.jp/forecast/9/43/8210/40130/" target="_blank" class="bg-white p-2.5 rounded-xl border border-slate-200/90 shadow-2xs flex items-center gap-2 hover:bg-slate-50 transition-colors">
+        <span class="text-xl">☀️</span>
+        <div class="min-w-0">
+          <div class="text-[10px] text-slate-500 font-bold">福岡市の天気予報</div>
+          <div class="text-xs font-black text-sky-700 truncate">tenki.jpで確認 ➔</div>
+        </div>
+      </a>
+      <a href="tel:0927153939" class="bg-white p-2.5 rounded-xl border border-slate-200/90 shadow-2xs flex items-center gap-2 hover:bg-slate-50 transition-colors">
+        <span class="text-xl">🏨</span>
+        <div class="min-w-0">
+          <div class="text-[10px] text-slate-500 font-bold">宿泊ホテル直通</div>
+          <div class="text-xs font-black text-emerald-700 truncate">クロスライフ博多天神 📞</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 重要手配サマリーアコーディオン -->
+    <div class="bg-white rounded-2xl p-3.5 sm:p-4 shadow-sm border border-slate-200/90 mb-4">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-xs font-black text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+          <span>📋</span> 予約済み一覧＆ワンタップ詳細
+        </h2>
+        <span class="text-[10px] bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-bold">確定済</span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+        
+        <!-- 飛行機 -->
+        <div class="bg-sky-50/80 border border-sky-100 rounded-xl p-2.5">
+          <div class="flex items-center justify-between font-bold text-sky-900 mb-1">
+            <span class="flex items-center gap-1.5"><span class="text-base">✈️</span> ANA（羽田 ⇔ 福岡）</span>
+            <span class="text-[10px] bg-sky-200/70 text-sky-800 px-1.5 py-0.2 rounded font-mono">F7LBL7</span>
+          </div>
+          <div class="space-y-0.5 text-[11px] text-slate-600">
+            <div><strong>往路:</strong> 11/16 ANA1077便 08:00 ➔ 09:55 (席:22H/K, 23H/K)</div>
+            <div><strong>復路:</strong> 11/18 ANA264便 17:40 ➔ 19:20 (席:21J/K, 22J/K)</div>
+          </div>
+          <div class="mt-2 flex gap-1.5">
+            <a href="https://www.ana.co.jp/" target="_blank" class="flex-1 text-center py-1 bg-white border border-sky-200 text-sky-700 rounded-lg font-bold text-[10px] hover:bg-sky-50">ANAアプリ/予約</a>
+          </div>
+        </div>
+
+        <!-- ホテル -->
+        <div class="bg-emerald-50/80 border border-emerald-100 rounded-xl p-2.5">
+          <div class="flex items-center justify-between font-bold text-emerald-900 mb-1">
+            <span class="flex items-center gap-1.5"><span class="text-base">🏨</span> クロスライフ博多天神</span>
+            <span class="text-[10px] bg-emerald-200/70 text-emerald-800 px-1.5 py-0.2 rounded font-mono">RA524613...</span>
+          </div>
+          <div class="space-y-0.5 text-[11px] text-slate-600">
+            <div>中央区春吉3-26-30（コンフォートツイン＋大浴場）</div>
+            <div class="text-[10px] text-emerald-700">★天神南駅徒歩5分・中洲屋台街徒歩5分！</div>
+          </div>
+          <div class="mt-2 flex gap-1.5">
+            <a href="https://maps.google.com/?q=クロスライフ博多天神" target="_blank" class="flex-1 text-center py-1 bg-white border border-emerald-200 text-emerald-700 rounded-lg font-bold text-[10px] hover:bg-emerald-50">🗺️ GoogleMap</a>
+            <a href="tel:0927153939" class="px-2.5 py-1 bg-white border border-emerald-200 text-emerald-700 rounded-lg font-bold text-[10px] hover:bg-emerald-50">📞 電話</a>
+          </div>
+        </div>
+
+        <!-- 1日目ディナー -->
+        <div class="bg-orange-50/80 border border-orange-100 rounded-xl p-2.5">
+          <div class="flex items-center justify-between font-bold text-orange-900 mb-1">
+            <span class="flex items-center gap-1.5"><span class="text-base">🍢</span> 博多とりかわ大臣 住吉串房</span>
+            <span class="text-[10px] bg-orange-200/70 text-orange-800 px-1.5 py-0.2 rounded font-mono">3XCNW68TM8</span>
+          </div>
+          <div class="space-y-0.5 text-[11px] text-slate-600">
+            <div>11/16(月) 17:00〜 4名予約済（博多区住吉3-5-8）</div>
+            <div class="text-[10px] text-orange-700">★住吉神社の真隣！名物カリモチ鶏皮</div>
+          </div>
+          <div class="mt-2 flex gap-1.5">
+            <a href="https://maps.google.com/?q=博多とりかわ大臣+住吉串房" target="_blank" class="flex-1 text-center py-1 bg-white border border-orange-200 text-orange-700 rounded-lg font-bold text-[10px] hover:bg-orange-50">🗺️ GoogleMap</a>
+            <a href="tel:0922622020" class="px-2.5 py-1 bg-white border border-orange-200 text-orange-700 rounded-lg font-bold text-[10px] hover:bg-orange-50">📞 電話</a>
+          </div>
+        </div>
+
+        <!-- 2日目ディナー -->
+        <div class="bg-rose-50/80 border border-rose-100 rounded-xl p-2.5">
+          <div class="flex items-center justify-between font-bold text-rose-900 mb-1">
+            <span class="flex items-center gap-1.5"><span class="text-base">🍲</span> 水炊き 善哉（ぜんざい）</span>
+            <span class="text-[10px] bg-rose-200/70 text-rose-800 px-1.5 py-0.2 rounded font-mono">67EXYCKAPJ</span>
+          </div>
+          <div class="space-y-0.5 text-[11px] text-slate-600">
+            <div>11/17(火) 18:00〜 4名半個室（禁煙）予約済</div>
+            <div class="text-[10px] text-rose-700">★パパ誕生日お祝い！ホテルから徒歩3分</div>
+          </div>
+          <div class="mt-2 flex gap-1.5">
+            <a href="https://maps.google.com/?q=水炊き+善哉+春吉" target="_blank" class="flex-1 text-center py-1 bg-white border border-rose-200 text-rose-700 rounded-lg font-bold text-[10px] hover:bg-rose-50">🗺️ GoogleMap</a>
+            <a href="tel:0927818465" class="px-2.5 py-1 bg-white border border-rose-200 text-rose-700 rounded-lg font-bold text-[10px] hover:bg-rose-50">📞 電話</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- メイン切り替えタブ（日程 ＋ 地図 ＋ 持ち物） -->
+    <div class="flex gap-1.5 mb-4 bg-slate-200/80 p-1.5 rounded-2xl sticky top-[68px] sm:top-[76px] z-20 backdrop-blur-md">
+      <button onclick="switchTab('day1')" id="tab-day1" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all tab-active">
+        1日目 (11/16)
+        <div class="text-[10px] font-normal opacity-90">太宰府＆屋台</div>
+      </button>
+      <button onclick="switchTab('day2')" id="tab-day2" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900">
+        2日目 (11/17)
+        <div class="text-[10px] font-normal opacity-90">水族館・誕生日🎂</div>
+      </button>
+      <button onclick="switchTab('day3')" id="tab-day3" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900">
+        3日目 (11/18)
+        <div class="text-[10px] font-normal opacity-90">筥崎宮＆空港</div>
+      </button>
+      <button onclick="switchTab('packing')" id="tab-packing" class="flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900">
+        🎒 持ち物
+        <div class="text-[10px] font-normal opacity-90">チェック表</div>
+      </button>
+      </div>
+
+    <!-- ======================================================== -->
+    <!-- ==================== 1日目 (11/16 月) ==================== -->
+    <!-- ======================================================== -->
+    <div id="content-day1" class="space-y-0">
+      
+      <!-- 起床 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-lg shrink-0">⏰</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-indigo-600">05:45</span>
+              <span class="text-[10px] bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-bold">起床</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">起床・準備（日暮里の自宅）</h3>
+            <p class="text-xs text-slate-600 mt-1">子どもたちを起こして着替え。前夜にパッキングを済ませておくと超スムーズ！</p>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">出発直前！リュックを背負った子どもたちの「いってきます！」元気ショット！</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300 shadow-2xs">
+            06:15 自宅発 ➔ 🚶 徒歩8分 ➔ 🚃 JR山手線(15分) ➔ 🚝 モノレール空港快速(18分)
+          </span>
+        </div>
+      </div>
+
+      <!-- 羽田空港 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg shrink-0">✈️</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-sky-600">07:15 ➔ 08:00 発</span>
+              <span class="text-[10px] bg-sky-50 text-sky-700 px-2 py-0.5 rounded font-medium">ANA 1077便</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">羽田空港第2ターミナル（朝食軽食）</h3>
+            <p class="text-xs text-slate-600 mt-1">自動機で荷物預け入れ ＆ 売店でおにぎりやパン、子どもの飲み物を買って朝食。08:00に福岡へテイクオフ！</p>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">大きなANAの飛行機を大きなガラス越しにバックにした家族4人ショット！</div>
+              </div>
+            </div>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=羽田空港第2ターミナル" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-lg border border-sky-200 hover:bg-sky-100">
+                🗺️ GoogleMap
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-sky-100/80 text-sky-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-sky-200">
+            ✈️ フライト 1時間55分（機内でお菓子・動画タイム）
+          </span>
+        </div>
+      </div>
+
+      <!-- 福岡空港 到着＆荷物受取 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-lg shrink-0">🛬</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-teal-600">09:55 ➔ 10:20</span>
+              <span class="text-[10px] bg-teal-50 text-teal-700 px-2 py-0.5 rounded font-bold">福岡到着</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">福岡空港 到着 ＆ 手荷物ピックアップ</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">「福岡空港へようこそ」の看板前やターンテーブル横で「福岡ついたぞー！」ポーズ！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              飛行機を降りて、ターンテーブルでスーツケースを受け取り・お手洗い。地下鉄改札へ直行！
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=福岡空港+国内線旅客ターミナルビル" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-lg border border-teal-200 hover:bg-teal-100">
+                🗺️ GoogleMap
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚇 地下鉄空港線（10:27発 ➔ 10:38天神着 乗車11分）➔ 🚶 ホテルに荷物預け(10分)
+          </span>
+        </div>
+      </div>
+
+      <!-- ひらおランチ -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg shrink-0">🍤</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-amber-600">11:05 ➔ 12:00</span>
+              <span class="text-[10px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded font-bold">ランチ</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">天ぷらのひらお アクロス店</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">揚げたてサクサク天ぷらをハフハフ頬張る瞬間＆山盛りご飯の幸せ顔！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              ホテルにスーツケースを預けてすぐ入店！揚げたての天ぷらが次々運ばれる福岡のソウルフード。名物「いかの塩辛」も満喫！
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=天ぷらのひらお+アクロス店" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200 hover:bg-amber-100">
+                🗺️ GoogleMap
+              </a>
+              <a href="tel:0927110051" class="inline-flex items-center gap-1 text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg hover:bg-slate-200">
+                📞 092-711-0051
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 徒歩8分 ➔ 🚃 西鉄電車（12:46発 急行で約25分・座れる）
+          </span>
+        </div>
+      </div>
+
+      <!-- 太宰府天満宮 ＆ 遊園地 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-lg shrink-0">⛩️</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-purple-600">13:10 ➔ 16:00</span>
+              <span class="text-[10px] bg-purple-50 text-purple-700 px-2 py-0.5 rounded font-bold">名所＆遊園地</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">太宰府天満宮 ＆ だざいふ遊園地</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">①御神牛の頭をなでる子どもたち ＆ ②焼きたて梅ヶ枝餅をパクリ！ ＆ ③レトロ観覧車・乗り物ではしゃぐ笑顔！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              参道で焼きたて「梅ヶ枝餅」をパクリ。屋根に森がある奇跡の「仮殿」を参拝。隣接のレトロ遊園地で子どもたちは待ち時間ゼロで乗り物乗り放題！
+            </p>
+            <div class="mt-2.5 flex gap-2 flex-wrap">
+              <a href="https://maps.google.com/?q=太宰府天満宮" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-lg border border-purple-200 hover:bg-purple-100">
+                🗺️ 太宰府天満宮Map
+              </a>
+              <a href="https://maps.google.com/?q=だざいふ遊園地" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-lg border border-purple-200 hover:bg-purple-100">
+                🗺️ だざいふ遊園地Map
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-purple-100 text-purple-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-purple-200">
+            🚃 西鉄電車（16:08発 ➔ 16:35着）★子どもはお昼寝タイム💤 ➔ 🚶 徒歩8分
+          </span>
+        </div>
+      </div>
+
+      <!-- チェックイン -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg shrink-0">🏨</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-emerald-600">16:45</span>
+              <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded font-bold">チェックイン</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">ホテル到着・チェックイン！</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">広々コンフォートツインのお部屋でベッドにダイブする子どもたちの解放感ショット！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">荷物を部屋に置いて手洗いうがい。手ぶらで身軽になってすぐ近くのご飯へ！</p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=クロスライフ博多天神" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200 hover:bg-emerald-100">
+                🗺️ GoogleMap
+              </a>
+              <a href="tel:0927153939" class="inline-flex items-center gap-1 text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg hover:bg-slate-200">
+                📞 092-715-3939
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 徒歩7分で住吉方面へ
+          </span>
+        </div>
+      </div>
+
+      <!-- 住吉神社 参拝 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg shrink-0">⛩️</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-emerald-600">16:50 ➔ 17:00</span>
+              <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded font-bold">寄り道参拝</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">住吉神社（全国2,000社の始祖）参拝</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">夕暮れの厳かな鳥居前＆境内の「古代力士像」と同じ力こぶポーズ！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              とりかわ大臣のすぐ隣！夕暮れの厳かな空気を味わいながらサクッとお参り。古代力士像や国の重文も。
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=住吉神社+福岡" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200 hover:bg-emerald-100">
+                🗺️ GoogleMap
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 徒歩2分で隣のお店へ
+          </span>
+        </div>
+      </div>
+
+      <!-- とりかわ大臣夕食 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center text-lg shrink-0">🍢</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-orange-600">17:00 ➔ 17:50</span>
+              <span class="text-[10px] bg-orange-50 text-orange-700 px-2 py-0.5 rounded font-bold">予約済（3XCNW68TM8）</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">博多とりかわ大臣 住吉串房</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">山盛りの「名物ぐるぐる鶏皮串」を両手に持って笑顔で乾杯！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              子どもたちのお腹を先に満たす！名物のカリモチ鶏皮、豚バラ、つくね、おにぎりで腹ごしらえ完了。
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=博多とりかわ大臣+住吉串房" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-orange-800 bg-orange-50 px-2.5 py-1 rounded-lg border border-orange-200 hover:bg-orange-100">
+                🗺️ GoogleMap
+              </a>
+              <a href="tel:0922622020" class="inline-flex items-center gap-1 text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg hover:bg-slate-200">
+                📞 092-262-2020
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 徒歩10分 または 🚕 タクシー約3分(約700円)でホテル玄関へ
+          </span>
+          <a href="https://go.mo-t.com/" target="_blank" class="inline-flex items-center gap-1 bg-black text-white text-[11px] font-black px-2.5 py-1 rounded-full shadow-2xs hover:bg-slate-800 transition-colors">
+            🚕 GOタクシー呼ぶ
+          </a>
+          </span>
+        </div>
+      </div>
+
+      <!-- ホテル風呂 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-lg shrink-0">♨️</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-teal-600">18:00 ➔ 19:15</span>
+              <span class="text-[10px] bg-teal-50 text-teal-700 px-2 py-0.5 rounded font-bold">大浴場</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">大浴場でお風呂タイム ＆ パジャマで休憩</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              先にお風呂に入ってサッパリ！パジャマや楽な服に着替えて部屋でゴロゴロ。この順番が夜を一番ラクにします。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 夜風に当たりながら徒歩5分
+          </span>
+        </div>
+      </div>
+
+      <!-- 屋台 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-lg shrink-0">🏮</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-red-600">19:30 ➔ 20:30</span>
+              <span class="text-[10px] bg-red-50 text-red-700 px-2 py-0.5 rounded font-bold">屋台体験</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">家族みんなで夜の屋台へ繰り出す！</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">赤提灯が灯る屋台の暖簾（のれん）をくぐってカウンターに座る旅情満点ショット！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              提灯の明かりの下、大人はビールで乾杯🍻、子どもたちは串焼きやラーメンをつまむ。
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=天神+屋台+大丸前" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-red-700 bg-red-50 px-2.5 py-1 rounded-lg border border-red-200 hover:bg-red-100">
+                🗺️ 天神屋台街Map
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 徒歩5分でホテル帰着
+          </span>
+        </div>
+      </div>
+
+      <!-- 就寝 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-lg shrink-0">💤</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-indigo-600">20:45</span>
+              <span class="text-[10px] bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-bold">就寝</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">歯磨きしてベッドへ直行・即就寝！</h3>
+            <p class="text-xs text-slate-600 mt-1">すでにお風呂に入っているので、歯磨きするだけでバタンキュー！朝までぐっすり💤</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- ==================== 2日目 (11/17 火) ==================== -->
+    <!-- ======================================================== -->
+    <div id="content-day2" class="space-y-0 hidden">
+      
+      <!-- 起床 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-lg shrink-0">⏰</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-indigo-600">07:30</span>
+              <span class="text-[10px] bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-bold">起床</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">起床・朝の身支度</h3>
+            <p class="text-xs text-slate-600 mt-1">パパ34歳の誕生日！「おめでとう！」で始まる朝🎂 顔を洗って朝食会場へ。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 エレベーターでホテル内の朝食会場へ
+          </span>
+        </div>
+      </div>
+
+      <!-- ホテル朝食 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg shrink-0">🥞</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-amber-600">08:00 ➔ 08:50</span>
+              <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded font-bold">自ホテルの朝食</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">クロスライフ博多天神 朝食ビュッフェ</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">明太子や九州グルメがずらり並んだプレートを前に「朝から豪華〜！」の笑顔！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              九州・福岡の地元食材を使ったホテル特製和洋ビュッフェ！移動の手間なく、焼きたてパンや明太子、温かいおかずをゆっくり堪能。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            お部屋で身支度 ➔ 09:15発 🚕 タクシー直行（約12分／都市高速経由 約2,000円）
+          </span>
+          <a href="https://go.mo-t.com/" target="_blank" class="inline-flex items-center gap-1 bg-black text-white text-[11px] font-black px-2.5 py-1 rounded-full shadow-2xs hover:bg-slate-800 transition-colors">
+            🚕 GOタクシー呼ぶ
+          </a>
+          </span>
+        </div>
+      </div>
+
+      <!-- 博物館 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg shrink-0">🪙</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-amber-600">09:30 ➔ 10:35</span>
+              <span class="text-[10px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded font-bold">国宝鑑賞</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">福岡市博物館（国宝「金印」本物！）</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">黄金に輝く本物の「国宝 金印」をじーっと覗き込む真剣な横顔！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              朝一番の元気な時間に、教科書でおなじみの国宝「漢委奴国王」の金印を鑑賞！巨大な山笠や体験ラボも。
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=福岡市博物館" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200 hover:bg-amber-100">
+                🗺️ GoogleMap
+              </a>
+              <a href="tel:0928455535" class="inline-flex items-center gap-1 text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg hover:bg-slate-200">
+                📞 092-845-5535
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-sky-100 text-sky-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-sky-200">
+            🚶 福岡タワーの横を歩いてマリゾンへ(10分) ➔ 🚢 高速船うみなかライン(11:05発/乗船20分)
+          </span>
+          <!-- 船ミッション -->
+          <div class="mt-2 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+            <span class="text-base shrink-0">📸</span>
+            <div class="flex-1 min-w-0">
+              <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+              <div class="font-bold text-rose-950 mt-0.5 leading-snug">高速船デッキで博多湾の海風を浴びながら福岡タワーをバックに爽快ショット！</div>
+            </div>
+          </div>
+          <span>
+          </span>
+        </div>
+      </div>
+
+      <!-- マリンワールド -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-lg shrink-0">🐬</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-cyan-600">11:35 ➔ 15:00</span>
+              <span class="text-[10px] bg-cyan-50 text-cyan-700 px-2 py-0.5 rounded font-bold">水族館＆ランチ</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">マリンワールド海の中道</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">①イルカジャンプ大迫力の瞬間！ ＆ ②レストラン巨大水槽越しにイルカとツーショット！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              イルカ水槽を見ながら食べられるレストラン「リリー」でランチ。13:30〜迫力のイルカ・アシカショー、巨大サメ、ペンギン見学！
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=マリンワールド海の中道" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-cyan-800 bg-cyan-50 px-2.5 py-1 rounded-lg border border-cyan-200 hover:bg-cyan-100">
+                🗺️ GoogleMap
+              </a>
+              <a href="tel:0926030400" class="inline-flex items-center gap-1 text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg hover:bg-slate-200">
+                📞 092-603-0400
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-indigo-100 text-indigo-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-indigo-200">
+            🚃 JR香椎線（海ノ中道 ➔ 香椎方面）
+          </span>
+        </div>
+      </div>
+
+      <!-- 柔軟分岐カード：香椎宮オプション -->
+      <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-4 shadow-sm border border-amber-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-lg shrink-0">⛩️</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-amber-700">14:45 ➔ 16:35（柔軟プラン）</span>
+              <span class="text-[10px] bg-amber-200 text-amber-800 px-2 py-0.5 rounded font-bold">当日判断OK</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">寄り道候補：勅祭社 香椎宮（かしいぐう）</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">（立ち寄った場合）樹齢1800年の巨大な御神木「綾杉」の前で神秘的な記念写真！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              <strong>「水族館が早めに終わったら寄る」バックアップ！</strong><br>
+              香椎駅で下車し、駅前からタクシー5分（約800円）で本殿前へ。<a href="https://go.mo-t.com/" target="_blank" class="inline-flex items-center gap-1 bg-black text-white text-[10px] font-bold px-2 py-0.5 rounded-full ml-1 shadow-2xs">🚕 GOタクシー</a>樹齢1800年の御神木「綾杉」や神秘的な空気を堪能（滞在約35分）。<br>
+              ➔ 15:50にタクシーで香椎駅に戻りJR快速で博多へ。<strong>16:35にはホテル帰着できるので18:00の誕生日ディナーにも余裕！</strong>
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=香椎宮" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-amber-800 bg-white px-2.5 py-1 rounded-lg border border-amber-300 hover:bg-amber-100">
+                🗺️ 香椎宮 GoogleMap
+              </a>
+            </div>
+            <div class="mt-2 text-[11px] text-slate-500 bg-white/70 p-2 rounded-lg border border-amber-100">
+              ※もし子どもたちが眠そうなら寄らずにそのまま電車で博多・天神へ直行してホテルでお昼寝休憩（通常ルート）でOK！
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 天神または博多からホテルへ帰着（16:35頃）
+          </span>
+        </div>
+      </div>
+
+      <!-- お部屋休憩 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center text-lg shrink-0">🛏️</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-slate-600">16:45 ➔ 17:45</span>
+              <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">休憩・おめかし</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">ホテルのお部屋でゆったり休憩（約60分）</h3>
+            <p class="text-xs text-slate-600 mt-1">荷物を置いてベッドで足を伸ばし、ディナーへ向けておめかし＆身だしなみチェック。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 徒歩3分
+          </span>
+        </div>
+      </div>
+
+      <!-- 誕生日ディナー -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center text-lg shrink-0">🎂</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-rose-600">18:00 ➔ 19:30</span>
+              <span class="text-[10px] bg-rose-50 text-rose-700 px-2 py-0.5 rounded font-bold">半個室・予約済</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">パパ誕生日ディナー：水炊き 善哉（ぜんざい）</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">★最重要★ パパ34歳お誕生日おめでとう！半個室で水炊き鍋を囲んで家族4人主役ショット！🎂✨</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              ホテルから徒歩3分。濃厚白濁スープとふわふわ鶏つくねでお祝い！人生最高の鶏雑炊で締めくくり！
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=水炊き+善哉+春吉" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-rose-800 bg-rose-50 px-2.5 py-1 rounded-lg border border-rose-200 hover:bg-rose-100">
+                🗺️ GoogleMap
+              </a>
+              <a href="tel:0927818465" class="inline-flex items-center gap-1 text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg hover:bg-slate-200">
+                📞 092-781-8465
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 徒歩3分でホテルへ帰着
+          </span>
+        </div>
+      </div>
+
+      <!-- 食後お風呂＆子ども就寝 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-lg shrink-0">♨️</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-teal-600">19:50 ➔ 20:45</span>
+              <span class="text-[10px] bg-teal-50 text-teal-700 px-2 py-0.5 rounded font-bold">大浴場＆就寝</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">大浴場でお風呂 ➔ 子どもたち就寝💤</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              水炊きでお腹いっぱいになった後、大浴場でポカポカ温まりパジャマへ。20:45過ぎには子どもたち熟睡！
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-purple-100 text-purple-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-purple-200">
+            🚶 パパ＆ママ交代で徒歩5分の屋台街へGO！
+          </span>
+        </div>
+      </div>
+
+      <!-- 交代屋台 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-lg shrink-0">🍻</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-purple-600">21:00 ➔ 23:00</span>
+              <span class="text-[10px] bg-purple-50 text-purple-700 px-2 py-0.5 rounded font-bold">大人の時間</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">🌟 夫婦交代で夜の大人屋台タイム！</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">【パパ・ママそれぞれ】一人屋台カウンターでビールやラーメンと一緒に自撮りまたは店員さんにパシャリ！🍺</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              <strong>【21:15〜22:00 パパ】：</strong>屋台カウンターで牛サガリや串で一人乾杯🍺<br>
+              <strong>【22:15〜23:00 ママ】：</strong>交代して夜風リフレッシュ！屋台ラーメンや夜カフェで息抜き☕️
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=中洲+屋台街" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-lg border border-purple-200 hover:bg-purple-100">
+                🗺️ 中洲屋台街Map
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            ホテルへ戻って歯磨き・就寝準備
+          </span>
+        </div>
+      </div>
+
+      <!-- パパママ就寝 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-lg shrink-0">💤</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-indigo-600">23:15</span>
+              <span class="text-[10px] bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-bold">就寝</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">パパ・ママ就寝💤</h3>
+            <p class="text-xs text-slate-600 mt-1">最高のお誕生日の一日でした！ふかふかのベッドでおやすみなさい。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- ==================== 3日目 (11/18 水) ==================== -->
+    <!-- ======================================================== -->
+    <div id="content-day3" class="space-y-0 hidden">
+      
+      <!-- 起床 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-lg shrink-0">⏰</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-indigo-600">07:30</span>
+              <span class="text-[10px] bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-bold">起床</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">起床・身支度</h3>
+            <p class="text-xs text-slate-600 mt-1">最終日の朝！身支度をして朝のお散歩＆朝食巡りへ。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 中洲方面へ朝の爽快お散歩（徒歩5〜8分）
+          </span>
+        </div>
+      </div>
+
+      <!-- 外ホテル朝食 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg shrink-0">🥐</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-amber-600">08:00 ➔ 09:00</span>
+              <span class="text-[10px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded font-bold">外ホテル朝食</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">近くのホテルで豪華朝食ビュッフェ！</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">洗練された外ホテルの優雅なダイニングで、朝から幸せいっぱいのモーニング写真！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              中洲・天神の人気ホテルのレストラン（例：ザ ロイヤルパーク キャンバス 福岡中洲のリバーサイド朝食、またはソラリア西鉄ホテル福岡等）へ！いつもと違う贅沢な空間で極上モーニング。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 徒歩でホテルへ戻る ➔ お部屋でパッキング
+          </span>
+        </div>
+      </div>
+
+      <!-- チェックアウト -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg shrink-0">🧳</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-emerald-600">09:30</span>
+              <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded font-bold">チェックアウト</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">チェックアウト（荷物はフロントへ）</h3>
+            <p class="text-xs text-slate-600 mt-1">スーツケースをフロントに預けて手ぶらに！アンパンマンミュージアムへ出発。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-slate-200/90 text-slate-700 text-[11px] font-bold px-2.5 py-1 rounded-full border border-slate-300">
+            🚶 春吉橋を渡ってリバレインへ徒歩10分
+          </span>
+        </div>
+      </div>
+
+      <!-- アンパンマン -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg shrink-0">🥖</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-amber-600">10:00 ➔ 12:30</span>
+              <span class="text-[10px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded font-bold">子ども大歓喜</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">福岡アンパンマンこどもミュージアム</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">①アンパンマンやばいきんまんとハイタッチ！ ＆ ②ジャムおじさんの可愛いキャラクターパンを持って決めポーズ！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              博多リバレイン5・6階。完全屋内で安心！参加型ショー鑑賞、すべり台、「ジャムおじさんのパン工場」で可愛いキャラクターパン購入。
+            </p>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=福岡アンパンマンこどもミュージアムinモール" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200 hover:bg-amber-100">
+                🗺️ GoogleMap
+              </a>
+              <a href="tel:0922918185" class="inline-flex items-center gap-1 text-[11px] font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg hover:bg-slate-200">
+                📞 092-291-8185
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-sky-100 text-sky-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-sky-200">
+            🚇 地下鉄箱崎線（中洲川端 ➔ 箱崎宮前駅 直結！乗車わずか8分）
+          </span>
+        </div>
+      </div>
+
+      <!-- 筥崎宮＆ナガタパン -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-lg shrink-0">⛩️</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-red-600">12:50 ➔ 14:15</span>
+              <span class="text-[10px] bg-red-50 text-red-700 px-2 py-0.5 rounded font-bold">参道ランチ＆参拝</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">日本三大八幡 筥崎宮 ＆ 名物ナガタパン</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">①ナガタパンの昭和レトロな古民家看板前でパンパクリ！ ＆ ②海へ続く雄大な参道で手を繋いで歩く後ろ姿！</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">
+              <strong>【ランチ】：</strong>参道沿いの超人気レトロ古民家ベーカリー「ナガタパン」で焼きたてパン＆2階イートイン！<br>
+              <strong>【参拝】：</strong>海へと続く雄大な参道、歴史ある楼門や重要文化財をゆったり参拝。駅直結で段差も少なく子連れでも超快適！
+            </p>
+            <div class="mt-2.5 flex gap-2 flex-wrap">
+              <a href="https://maps.google.com/?q=筥崎宮" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-red-700 bg-red-50 px-2.5 py-1 rounded-lg border border-red-200 hover:bg-red-100">
+                🗺️ 筥崎宮 GoogleMap
+              </a>
+              <a href="https://maps.google.com/?q=ナガタパン+箱崎" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200 hover:bg-amber-100">
+                🗺️ ナガタパン GoogleMap
+              </a>
+            </div>
+            <div class="mt-2 text-[11px] text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-200">
+              ※もし雨天等で移動を減らしたい場合は、近場の「川端商店街ランチ ＆ 櫛田神社（飾り山笠）」への切り替えも自由自在です！
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線 -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-emerald-100 text-emerald-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-emerald-200">
+            🚇 地下鉄で天神・春吉へ戻り荷物受取（14:35） ➔ 14:50発 🚕 空港直行（わずか15分！）
+          </span>
+          <a href="https://go.mo-t.com/" target="_blank" class="inline-flex items-center gap-1 bg-black text-white text-[11px] font-black px-2.5 py-1 rounded-full shadow-2xs hover:bg-slate-800 transition-colors">
+            🚕 GOタクシー呼ぶ
+          </a>
+          </span>
+        </div>
+      </div>
+
+      <!-- 福岡空港 手続き＆満喫 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-lg shrink-0">🛫</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-sky-600">15:10 ➔ 17:15</span>
+              <span class="text-[10px] bg-sky-50 text-sky-700 px-2 py-0.5 rounded font-bold">空港手続き＆満喫</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">福岡空港：手荷物預け入れ ＆ 空港満喫！</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">展望デッキのフェンス越しに、目の前で轟音とともに飛び立つ飛行機を見つめる子どもたちの後ろ姿！</div>
+              </div>
+            </div>
+            <div class="text-xs text-slate-600 mt-1 space-y-1">
+              <div><span class="font-bold text-slate-700">① 15:20 手荷物預け入れ：</span>ANA自動手荷物預け機でスーツケースをポンと預ける。</div>
+              <div class="text-[11px] text-slate-500 pl-3">※オンラインチェックインは前日(11/17 17:40〜)スマホで済ませてあるのでカウンター並びゼロ！</div>
+              <div><span class="font-bold text-slate-700">② 15:35〜17:00 空港満喫：</span>展望デッキで大迫力の飛行機離着陸見学！通りもん・めんべい等のお土産ショッピング。</div>
+              <div><span class="font-bold text-slate-700">③ 17:15 保安検査場通過：</span>スマホQRコードでタッチ通過 ➔ 搭乗口へ！</div>
+            </div>
+            <div class="mt-2.5 flex gap-2">
+              <a href="https://maps.google.com/?q=福岡空港+国内線旅客ターミナルビル" target="_blank" class="inline-flex items-center gap-1 text-[11px] font-bold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-lg border border-sky-200 hover:bg-sky-100">
+                🗺️ 福岡空港 GoogleMap
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線: フライト -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-sky-100 text-sky-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-sky-200">
+            ✈️ ANA 264便（17:40発 ➔ 19:20羽田着／フライト 1時間40分）
+          </span>
+        </div>
+      </div>
+
+      <!-- 羽田空港到着＆受取 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-lg shrink-0">🛬</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-teal-600">19:20 ➔ 19:50</span>
+              <span class="text-[10px] bg-teal-50 text-teal-700 px-2 py-0.5 rounded font-bold">羽田着</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">羽田空港第2ターミナル 到着 ＆ 手荷物受取</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              19:20着陸。飛行機を降りて、ターンテーブルでスーツケースをピックアップ ＆ お手洗いを済ませてモノレール改札へ直行！
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 移動点線: 帰宅ルート -->
+      <div class="relative pl-6 py-2">
+        <div class="absolute left-9 top-0 bottom-0 border-l-2 border-dashed border-slate-300"></div>
+        <div class="flex items-center gap-2 pl-7 py-1">
+          <span class="inline-flex items-center gap-1 bg-blue-100 text-blue-800 text-[11px] font-bold px-2.5 py-1 rounded-full border border-blue-200">
+            🚝 モノレール空港快速（19:57発 ➔ 20:15浜松町着）➔ 🚃 JR山手線（20:20発 ➔ 20:35日暮里着）
+          </span>
+        </div>
+      </div>
+
+      <!-- 帰宅 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg shrink-0">🏠</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-0.5">
+              <span class="text-xs font-bold text-blue-600">20:45 到着</span>
+              <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">ゴール！</span>
+            </div>
+            <h3 class="font-black text-slate-800 text-sm sm:text-base">日暮里のご自宅 到着！</h3>
+            
+            <!-- 写真ミッションバッジ -->
+            <div class="mt-2.5 bg-rose-50/90 border border-rose-200/80 rounded-xl p-2.5 flex items-start gap-2 text-xs">
+              <span class="text-base shrink-0">📸</span>
+              <div class="flex-1 min-w-0">
+                <div class="text-[10px] font-black text-rose-600 tracking-wider">📸 おすすめ撮影アイデア</div>
+                <div class="font-bold text-rose-950 mt-0.5 leading-snug">自宅玄関前で「ただいま〜！」たくさんの思い出とお土産を抱えて旅の締めくくりゴールショット！🎉</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mt-1">「ただいま！」20:45には自宅玄関へ。お疲れ様でした🎉 家族みんなで最高の思い出ができました！</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+      <!-- 雨天・体力切れの代替案（アコーディオン） -->
+      <div class="bg-slate-200/60 rounded-2xl p-3 border border-slate-300">
+        <details class="cursor-pointer group">
+          <summary class="font-black text-xs text-slate-700 flex items-center justify-between select-none">
+            <span class="flex items-center gap-1.5">☔ 【もしもの時】雨天・移動短縮プラン</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="mt-2.5 pt-2.5 border-t border-slate-300 text-xs text-slate-600 space-y-1.5">
+            <div><strong>・アンパンマンミュージアム：</strong> 完全屋内施設なので雨でも快適！</div>
+            <div><strong>・午後に雨が強まった場合：</strong> 筥崎宮（屋外参道）への移動を取りやめ、アンパンマン直結の「川端通商店街（完全アーケード）」で博多うどんランチ＆「櫛田神社（飾り山笠）」散策に切り替えれば一切傘をささずに楽しめます。</div>
+          </div>
+        </details>
+      </div>
+
+    </div>
+
+    
+    
+    <!-- ==================== 持ち物・バッグ別パッキングリスト ==================== -->
+    <div id="content-packing" class="space-y-4 hidden">
+
+      <!-- バッグ構成サマリー -->
+      <div class="bg-gradient-to-r from-sky-600 to-indigo-600 text-white rounded-2xl p-4 shadow-sm">
+        <h3 class="font-black text-sm mb-1 flex items-center gap-2">
+          <span>🎒</span> 今回の荷物フォーメーション（バッグ3個）
+        </h3>
+        <p class="text-xs text-sky-100 mb-3">ホテル・空港で預ける荷物と、移動中にすぐ取り出したい手荷物を完璧に役割分担！</p>
+        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+          <div class="bg-white/20 p-2 rounded-xl backdrop-blur-xs">
+            <div class="font-bold text-sky-200 text-[10px]">① パパリュック</div>
+            <div class="font-black mt-0.5">重いもの・IT・貴重品</div>
+          </div>
+          <div class="bg-white/20 p-2 rounded-xl backdrop-blur-xs">
+            <div class="font-bold text-sky-200 text-[10px]">② ママリュック</div>
+            <div class="font-black mt-0.5">子ども即応・ケアグッズ</div>
+          </div>
+          <div class="bg-white/20 p-2 rounded-xl backdrop-blur-xs">
+            <div class="font-bold text-sky-200 text-[10px]">③ スーツケース</div>
+            <div class="font-black mt-0.5">ホテルまで開けない物</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ① パパのリュック（重いもの・貴重品・IT） -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
+        <div class="flex items-center justify-between mb-2.5 border-b border-slate-100 pb-2">
+          <h3 class="font-black text-slate-800 text-sm flex items-center gap-2">
+            <span>👨🎒</span> ① パパのリュック（貴重品・IT・まとめ役）
+          </h3>
+          <span class="text-[10px] bg-sky-100 text-sky-800 font-bold px-2 py-0.5 rounded-full">機内持ち込み</span>
+        </div>
+        <p class="text-[11px] text-slate-500 mb-2">手ぶらで動けるように、重い精密機器や手続き関係をパパが一括管理！</p>
+        <ul class="text-xs text-slate-700 space-y-2">
+          <li class="flex items-start gap-2"><span>・</span><span><strong>お財布 ＆ 現金（千円札10〜15枚・小銭）：</strong><strong>博多屋台は現金オンリー多め！</strong>太宰府のお賽銭や遊園地チケットにも。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>大容量モバイルバッテリー ＆ 各種充電ケーブル：</strong>1日中写真撮影＆Googleマップを使うため必須！</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>タブレット（動画事前オフライン保存済） ＆ 子ども用イヤホン：</strong>飛行機や電車の退屈・ぐずり対策に。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>折りたたみ傘（1〜2本）：</strong>急な小雨対策にリュックのサイドポケットへ。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>家族全員分の交通系ICカード（Suica/PASMO）：</strong>改札タッチですぐ出せる位置に。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>大きめエコバッグ（1〜2枚）：</strong>お土産（通りもん・めんべい）や子どもが脱いだ上着をまとめる用。</span></li>
+        </ul>
+      </div>
+
+      <!-- ② ママのリュック（子どものお世話・即応グッズ） -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
+        <div class="flex items-center justify-between mb-2.5 border-b border-slate-100 pb-2">
+          <h3 class="font-black text-slate-800 text-sm flex items-center gap-2">
+            <span>👩🎒</span> ② ママのリュック（子ども即応・ケアグッズ）
+          </h3>
+          <span class="text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-full">機内持ち込み</span>
+        </div>
+        <p class="text-[11px] text-slate-500 mb-2">移動中やお食事中、子どもが「喉渇いた！」「汚れた！」「トイレ！」となった時に1秒で出せるセット！</p>
+        <ul class="text-xs text-slate-700 space-y-2">
+          <li class="flex items-start gap-2"><span>・</span><span><strong>健康保険証 ＆ 乳幼児医療証（荒川区） ＆ お薬手帳：</strong>万一の発熱・受診用にお財布やポーチに。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>当日常備薬・解熱剤（アンヒバ座薬/カロナール、絆創膏）：</strong>手元にあると安心。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>当日のオムツ（4〜5枚） ＆ おしりふき ＆ 消臭袋：</strong>3歳次男の日中用。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>除菌ウェットティッシュ ＆ 手口ふき：</strong>食べ歩き、屋台、天ぷらで大活躍！</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>飛行機の耳抜きお菓子：</strong>離着陸時に噛むラムネ、グミ、ストロー付きパックジュース。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>音の出ない遊びグッズ：</strong>シールブック、100均のお絵かきボードなど。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>子どもの着替え（1セットのみ）：</strong>ジュースこぼし・泥汚れ時の緊急用として手元に1着だけイン。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>食事用エプロン ＆ 子ども用スプーンフォーク：</strong>外食時に重宝。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>ママの身だしなみポーチ（リップ・目薬・ハンカチ）：</strong>サッと取り出しやすいポケットへ。</span></li>
+        </ul>
+      </div>
+
+      <!-- ③ スーツケース（ホテル到着まで開けない預け荷物） -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200">
+        <div class="flex items-center justify-between mb-2.5 border-b border-slate-100 pb-2">
+          <h3 class="font-black text-slate-800 text-sm flex items-center gap-2">
+            <span>🧳</span> ③ スーツケース（ANA預け ＆ ホテル直行荷物）
+          </h3>
+          <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">預け入れ荷物</span>
+        </div>
+        <p class="text-[11px] text-slate-500 mb-2">空港の自動手荷物機で預け、ホテルに着くまで一切開けません！お土産スペースを半分空けておくのがコツ。</p>
+        <ul class="text-xs text-slate-700 space-y-2">
+          <li class="flex items-start gap-2"><span>・</span><span><strong>パパ・ママの着替え（2泊3日分）：</strong>翌日・翌々日の服と下着。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>子どもの着替え（予備1セットのみ！）：</strong><strong>ホテル2階に24時間コインランドリー完備</strong>のため、最小限でOK！</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>子どものパジャマ（2人分）：</strong>ホテルの部屋着は大人用のため、着慣れたパジャマを持参。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>オムツのストック（約10枚）：</strong>スーツケースに予備を入れておき、毎朝ママリュックへ補充。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>洗面・スキンケア用品 ＆ 子ども用歯ブラシ：</strong>ホテル大浴場で使うママの化粧水・メイク落とし等。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>ビニール袋（大中小 各数枚）：</strong>洗濯物入れや汚れ物用。</span></li>
+          <li class="flex items-start gap-2"><span>・</span><span><strong>お土産用の空きスペース：</strong>最終日に買う明太子や通りもん・お菓子を詰めるため、スーツケースの片面は空けておく！</span></li>
+        </ul>
+      </div>
+
+      <!-- 子連れ安心レスキュー情報（超実用） -->
+      <div class="bg-gradient-to-r from-teal-50 to-emerald-50 rounded-2xl p-4 sm:p-5 shadow-sm border border-emerald-200">
+        <h3 class="font-black text-emerald-900 text-sm mb-2.5 flex items-center gap-2">
+          <span>👶</span> 現地のお助けスポット情報（授乳室・オムツ・ベビーカー）
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
+          <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+            <strong class="text-emerald-800">・太宰府天満宮：</strong>案内所横に授乳・オムツ替えスペースあり。だざいふ遊園地内にも完備。
+          </div>
+          <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+            <strong class="text-emerald-800">・マリンワールド：</strong>館内完全バリアフリー。ベビーカー無料貸出あり。授乳室2ヶ所。
+          </div>
+          <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+            <strong class="text-emerald-800">・アンパンマン：</strong>館内に超充実のベビールーム（調乳温水器・オムツ自販機・離乳食スペース完備）。
+          </div>
+          <div class="bg-white/90 p-2.5 rounded-xl border border-emerald-100">
+            <strong class="text-emerald-800">・福岡空港：</strong>保安検査通過後も各搭乗口近くにキッズスペース・授乳室あり。
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script>
+    function switchTab(tabId) {
+      ['day1', 'day2', 'day3', 'packing'].forEach(id => {
+        const btn = document.getElementById('tab-' + id);
+        const content = document.getElementById('content-' + id);
+        if (id === tabId) {
+          btn.className = 'flex-1 py-2 rounded-xl font-bold text-xs transition-all tab-active';
+          content.classList.remove('hidden');
+        } else {
+          btn.className = 'flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900';
+          content.classList.add('hidden');
+        }
+      });
+      // スムーズスクロール
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    
+  </script>
+
+  <!-- インストール方法モーダル -->
+  <div id="install-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-5 shadow-2xl">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-black text-slate-800 text-sm">📲 ホーム画面に追加する方法</h3>
+        <button onclick="toggleModal('install-modal')" class="text-slate-400 hover:text-slate-600 text-lg font-bold">×</button>
+      </div>
+      <div class="space-y-3 text-xs text-slate-600 leading-relaxed">
+        <div class="bg-sky-50 p-2.5 rounded-xl border border-sky-100">
+          <strong class="text-sky-900 block mb-1">【iPhone (Safari) の場合】</strong>
+          1. 画面下の共有ボタン（四角から矢印が上に出ているアイコン）をタップ<br>
+          2. 下にスクロールして<strong>「ホーム画面に追加」</strong>をタップ！
+        </div>
+        <div class="bg-emerald-50 p-2.5 rounded-xl border border-emerald-100">
+          <strong class="text-emerald-900 block mb-1">【Android (Chrome) の場合】</strong>
+          1. 画面右上の「︙（メニュー）」をタップ<br>
+          2. <strong>「ホーム画面に追加」</strong>または「アプリをインストール」をタップ！
+        </div>
+        <p class="text-[11px] text-slate-400">※ホーム画面に追加すると、電波が悪い場所でもアイコンから一発で開けるようになります。</p>
+      </div>
+      <button onclick="toggleModal('install-modal')" class="mt-4 w-full py-2 bg-slate-800 text-white rounded-xl font-bold text-xs">とじる</button>
+    </div>
+  </div>
+
+  <script>
+    // タブ切り替え
+    function switchTab(tabId) {
+      ['day1', 'day2', 'day3', 'packing'].forEach(id => {
+        const btn = document.getElementById('tab-' + id);
+        const content = document.getElementById('content-' + id);
+        if (!btn || !content) return;
+        if (id === tabId) {
+          btn.className = 'flex-1 py-2 rounded-xl font-bold text-xs transition-all tab-active';
+          content.classList.remove('hidden');
+        } else {
+          btn.className = 'flex-1 py-2 rounded-xl font-bold text-xs transition-all text-slate-600 hover:text-slate-900';
+          content.classList.add('hidden');
+        }
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) modal.classList.toggle('hidden');
+    }
+
+    
+
+    
+
+    function deleteExpense(idx) {
+      const expenses = JSON.parse(localStorage.getItem('fukuoka_expenses') || '[]');
+      expenses.splice(idx, 1);
+      localStorage.setItem('fukuoka_expenses', JSON.stringify(expenses));
+      }
+
+    // 初期化
+    document.addEventListener('DOMContentLoaded', () => {
+      });
+  </script>
+
+</body>
+</html>
